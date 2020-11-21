@@ -369,3 +369,232 @@ arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
   49648	   1256	20996640	21047544	14128f8	sdcard_led_switch.elf
 'Finished building: sdcard_led_switch.elf.size'
 ' '
+16:52:17 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,\ -lxilffs,\ -lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find \: No such file or directory
+c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lxilffs,\
+c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lgcc,-lc,--end-group
+collect2.exe: error: ld returned 1 exit status
+make: *** [sdcard_led_switch.elf] Error 1
+16:53:25 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
+make clean 
+rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
+' '
+16:53:26 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,\ -lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find \: No such file or directory
+c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lgcc,-lc,--end-group
+collect2.exe: error: ld returned 1 exit status
+make: *** [sdcard_led_switch.elf] Error 1
+16:53:27 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
+make clean 
+rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
+' '
+16:53:27 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,\ -lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find \: No such file or directory
+c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lgcc,-lc,--end-group
+collect2.exe: error: ld returned 1 exit status
+make: *** [sdcard_led_switch.elf] Error 1
+16:53:56 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
+make clean 
+rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
+' '
+16:53:56 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,\ -lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find \: No such file or directory
+c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lgcc,-lc,--end-group
+collect2.exe: error: ld returned 1 exit status
+make: *** [sdcard_led_switch.elf] Error 1
+16:54:32 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:54:35 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
+make clean 
+rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
+' '
+16:54:35 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/sdcard-led.o: In function `FfsSdPolledExample':
+E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:153: undefined reference to `f_mount'
+E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:168: undefined reference to `f_open'
+E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:175: undefined reference to `f_lseek'
+E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:182: undefined reference to `f_write'
+E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:190: undefined reference to `f_lseek'
+E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:196: undefined reference to `f_read'
+E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:208: undefined reference to `f_close'
+collect2.exe: error: ld returned 1 exit status
+make: *** [sdcard_led_switch.elf] Error 1
+17:00:08 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
+make clean 
+rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
+' '
+17:00:08 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-xilffs,--end-group
+c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: unrecognised option: -xilffs
+collect2.exe: error: ld returned 1 exit status
+make: *** [sdcard_led_switch.elf] Error 1
+17:00:09 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
+make clean 
+rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
+' '
+17:00:09 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-xilffs,--end-group
+c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: unrecognised option: -xilffs
+collect2.exe: error: ld returned 1 exit status
+make: *** [sdcard_led_switch.elf] Error 1
+17:00:37 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
+make clean 
+rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
+' '
+17:00:37 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
+'Finished building target: sdcard_led_switch.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49648	   1256	20996640	21047544	14128f8	sdcard_led_switch.elf
+'Finished building: sdcard_led_switch.elf.size'
+' '
+17:00:38 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
+make clean 
+rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
+' '
+17:00:38 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
+'Finished building target: sdcard_led_switch.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49648	   1256	20996640	21047544	14128f8	sdcard_led_switch.elf
+'Finished building: sdcard_led_switch.elf.size'
+' '
