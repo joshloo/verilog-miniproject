@@ -13,4 +13,4 @@ SDK Properties -> C/C++ Build -> Settings -> gcc linker -> Inferred Options -> S
 
 In Software Platform Inferred Flags options, add '-lxilffs'.  
 
- 
+C file resides in vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch/src/sdcard-led.c  
