@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Nov 21 15:46:55 2020
+# Process ID: 17644
+# Current directory: E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1
+# Command line: vivado.exe -log sdcard_led_switch_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sdcard_led_switch_xbar_0.tcl
+# Log file: E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0.vds
+# Journal file: E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source sdcard_led_switch_xbar_0.tcl -notrace
