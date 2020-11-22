@@ -44,7 +44,8 @@ static FATFS fatfs;
  * To test logical drive 0, FileName should be "0:/<File name>" or
  * "<file_name>". For logical drive 1, FileName should be "1:/<file_name>"
  */
-static char FileName[32] = "Abcd.bin";
+static char FileName[32] = "file3.bin";
+
 static char *SD_File;
 u32 Platform;
 
@@ -79,16 +80,16 @@ int LEDOutputExample(void)
 		XGpio_SetDataDirection(&Gpio, LED_CHANNEL, 0x0);
 
 		/* Loop forever blinking the LED. */
-			while (1) {
+        //while (1) {
 				/* Write output to the LEDs. */
 				XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, led);
 
 				/* Flip LEDs. */
-				led = ~led;
+		//		led = ~led;
 
 				/* Wait a small amount of time so that the LED blinking is visible. */
-				for (Delay = 0; Delay < LED_DELAY; Delay++);
-			}
+		//		for (Delay = 0; Delay < LED_DELAY; Delay++);
+		//	}
 
 		return XST_SUCCESS; /* Should be unreachable */
 }
@@ -108,6 +109,12 @@ int main(void)
 	xil_printf("The code for switch detection flip is here:\r\n");
 	xil_printf("SD Polled File System Example Test \r\n");
 
+	// Before this, we already write 3 files.
+	// file1.bin consist of number 8 as the content
+	// file2.bin consist of number 5 as the content
+	// file3.bin consist of number 3 as the content
+
+	// below code will demonstrate that we are able to read from file 1 to 3.
 	Status = FfsSdPolledExample();
 	if (Status != XST_SUCCESS) {
 		xil_printf("SD Polled File System Example Test failed \r\n");
@@ -136,7 +143,7 @@ int FfsSdPolledExample(void)
 	UINT NumBytesRead;
 	UINT NumBytesWritten;
 	u32 BuffCnt;
-	u32 FileSize = (8*1024*1024);
+	u32 FileSize = 1;
 	/*
 	 * To test logical drive 0, Path should be "0:/"
 	 * For logical drive 1, Path should be "1:/"
@@ -146,7 +153,7 @@ int FfsSdPolledExample(void)
 	Platform = XGetPlatform_Info();
 
 	for(BuffCnt = 0; BuffCnt < FileSize; BuffCnt++){
-		SourceAddress[BuffCnt] = TEST + BuffCnt;
+		SourceAddress[BuffCnt] = 3;
 	}
 
 	/* Register volume work area, initialize device	 */
@@ -197,10 +204,13 @@ int FfsSdPolledExample(void)
 			&NumBytesRead);
 	if (Res) {
 		return XST_FAILURE;
+	} else {
+		xil_printf("read successful!! number of byte read is : %d \r\n", NumBytesRead);
 	}
 
 	/* Data verification */
 	for(BuffCnt = 0; BuffCnt < FileSize; BuffCnt++){
+		xil_printf("destination : %d \r\n",DestinationAddress[BuffCnt]);
 		if(SourceAddress[BuffCnt] != DestinationAddress[BuffCnt]){
 			return XST_FAILURE;
 		}
