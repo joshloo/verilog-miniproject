@@ -56,9 +56,11 @@ u8 SourceAddress[10*1024*1024] __attribute__ ((aligned(32)));
 
 /* Definitions */
 #define GPIO_DEVICE_ID  XPAR_AXI_GPIO_0_DEVICE_ID	/* GPIO device that LEDs are connected to */
+#define GPIO1_DEVICE_ID  XPAR_AXI_GPIO_1_DEVICE_ID	/* GPIO device that SWS are connected to */
 #define LED 0x9										/* Initial LED value - X00X */
 #define LED_DELAY 10000000							/* Software delay length */
 #define LED_CHANNEL 1								/* GPIO port for LEDs */
+#define SWS_CHANNEL 1								/* GPIO port for SWS */
 #define printf xil_printf							/* smaller, optimised printf */
 
 XGpio Gpio;											/* GPIO Device driver instance */
@@ -98,6 +100,8 @@ int LEDOutputExample(void)
 int main(void)
 {
 	int Status;
+	int sws = 0;
+
 	xil_printf("The code for LED flip is here:\r\n");
 
 	/* Execute the LED output. */
@@ -106,7 +110,22 @@ int main(void)
 		xil_printf("GPIO output to the LEDs failed!\r\n");
 	}
 
+
 	xil_printf("The code for switch detection flip is here:\r\n");
+	// This code reads SWS settings from the switches.
+	Status = XGpio_Initialize(&Gpio, GPIO1_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("tak ada GPIO1 \r\n");
+		return XST_FAILURE;
+	} else {
+		XGpio_SetDataDirection(&Gpio, SWS_CHANNEL, 0x1F); //set as input
+		while(1){
+			sws = XGpio_DiscreteRead(&Gpio, SWS_CHANNEL);
+			xil_printf("sws 1 data read is %d \r\n", sws);
+		}
+	}
+
+
 	xil_printf("SD Polled File System Example Test \r\n");
 
 	// Before this, we already write 3 files.
@@ -185,13 +204,13 @@ int FfsSdPolledExample(void)
 		return XST_FAILURE;
 	}
 
-	/* Write data to file.	 */
+	/* Write data to file.
 	Res = f_write(&fil, (const void*)SourceAddress, FileSize,
 			&NumBytesWritten);
 	if (Res) {
 		xil_printf("SD f_write failed \r\n");
 		return XST_FAILURE;
-	}
+	}*/
 
 	/* Pointer to beginning of file .*/
 	Res = f_lseek(&fil, 0);
