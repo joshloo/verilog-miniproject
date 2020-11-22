@@ -44,7 +44,9 @@ static FATFS fatfs;
  * To test logical drive 0, FileName should be "0:/<File name>" or
  * "<file_name>". For logical drive 1, FileName should be "1:/<file_name>"
  */
-static char FileName[32] = "file3.bin";
+static char FileName1[32] = "file1.bin";
+static char FileName2[32] = "file2.bin";
+static char FileName3[32] = "file3.bin";
 
 static char *SD_File;
 u32 Platform;
@@ -71,6 +73,24 @@ int main(void)
 	int Status;
 	int sws = 0;
 
+	// this 3 functions write file 1 to 3.
+	// file1.bin now contains 8
+	// file2.bin now contains 3
+	// file3.bin now contains 5
+	Status = writeFile1();
+	if (Status != XST_SUCCESS) {
+		xil_printf("Write file 1 failed\r\n");
+	}
+	Status = writeFile2();
+	if (Status != XST_SUCCESS) {
+		xil_printf("Write file 2 failed\r\n");
+	}
+	Status = writeFile3();
+	if (Status != XST_SUCCESS) {
+		xil_printf("Write file 3 failed\r\n");
+	}
+	xil_printf("All 3 files written successfully"\r\n");
+
 	xil_printf("The code for switch detection flip is here:\r\n");
 	// This code reads SWS settings from the switches.
 	Status = XGpio_Initialize(&Gpio0, GPIO_DEVICE_ID);
@@ -88,7 +108,7 @@ int main(void)
 		while(1){
 			sws = XGpio_DiscreteRead(&Gpio1, SWS_CHANNEL);
 			xil_printf("sws 1 data read is %d \r\n", sws);
-			XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, sws); // directly write sws settings to led
+			XGpio_DiscreteWrite(&Gpio0, LED_CHANNEL, sws); // directly write sws settings to led
 		}
 	}
 
@@ -111,18 +131,243 @@ int main(void)
 	return XST_SUCCESS;
 }
 
-/*****************************************************************************/
-/**
-** File system example using SD driver to write to and read from an SD card
-* in polled mode. This example creates a new file on an
-* SD card (which is previously formatted with FATFS), write data to the file
-* and reads the same data back to verify.
-*
-* @param	None
-* @return	XST_SUCCESS if successful, otherwise XST_FAILURE.
-* @note		None
-*
-******************************************************************************/
+int writeFile1(void){
+	FRESULT Res;
+	UINT NumBytesRead;
+	UINT NumBytesWritten;
+	u32 BuffCnt;
+	u32 FileSize = 1;
+	/*
+	 * To test logical drive 0, Path should be "0:/"
+	 * For logical drive 1, Path should be "1:/"
+	 */
+	TCHAR *Path = "0:/";
+
+	Platform = XGetPlatform_Info();
+
+	for(BuffCnt = 0; BuffCnt < FileSize; BuffCnt++){
+		SourceAddress[BuffCnt] = 8;
+	}
+
+	/* Register volume work area, initialize device	 */
+	Res = f_mount(&fatfs, Path, 0);
+
+	if (Res != FR_OK) {
+		xil_printf("SD f_mount failed \r\n");
+		return XST_FAILURE;
+	}
+
+	SD_File = (char *)FileName1;
+
+	Res = f_open(&fil, SD_File, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	if (Res) {
+		xil_printf("SD f_open failed \r\n");
+		return XST_FAILURE;
+	}
+
+	/* Pointer to beginning of file .	 */
+	Res = f_lseek(&fil, 0);
+	if (Res) {
+		xil_printf("SD f_lseek failed \r\n");
+		return XST_FAILURE;
+	}
+
+	/* Write data to file.*/
+	Res = f_write(&fil, (const void*)SourceAddress, FileSize,
+			&NumBytesWritten);
+	if (Res) {
+		xil_printf("SD f_write failed \r\n");
+		return XST_FAILURE;
+	}
+
+	/* Pointer to beginning of file .*/
+	Res = f_lseek(&fil, 0);
+	if (Res) {
+		return XST_FAILURE;
+	}
+
+	/* Read data from file.	 */
+	Res = f_read(&fil, (void*)DestinationAddress, FileSize,
+			&NumBytesRead);
+	if (Res) {
+		return XST_FAILURE;
+	} else {
+		xil_printf("read successful!! number of byte read is : %d \r\n", NumBytesRead);
+	}
+
+	/* Data verification */
+	for(BuffCnt = 0; BuffCnt < FileSize; BuffCnt++){
+		xil_printf("content written : %d \r\n",DestinationAddress[BuffCnt]);
+		if(SourceAddress[BuffCnt] != DestinationAddress[BuffCnt]){
+			return XST_FAILURE;
+		}
+	}
+	Res = f_close(&fil);
+	if (Res) {
+		return XST_FAILURE;
+	}
+	return XST_SUCCESS;
+}
+
+
+int writeFile2(void){
+	FRESULT Res;
+	UINT NumBytesRead;
+	UINT NumBytesWritten;
+	u32 BuffCnt;
+	u32 FileSize = 1;
+	/*
+	 * To test logical drive 0, Path should be "0:/"
+	 * For logical drive 1, Path should be "1:/"
+	 */
+	TCHAR *Path = "0:/";
+
+	Platform = XGetPlatform_Info();
+
+	for(BuffCnt = 0; BuffCnt < FileSize; BuffCnt++){
+		SourceAddress[BuffCnt] = 3;
+	}
+
+	/* Register volume work area, initialize device	 */
+	Res = f_mount(&fatfs, Path, 0);
+
+	if (Res != FR_OK) {
+		xil_printf("SD f_mount failed \r\n");
+		return XST_FAILURE;
+	}
+
+	SD_File = (char *)FileName2;
+
+	Res = f_open(&fil, SD_File, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	if (Res) {
+		xil_printf("SD f_open failed \r\n");
+		return XST_FAILURE;
+	}
+
+	/* Pointer to beginning of file .	 */
+	Res = f_lseek(&fil, 0);
+	if (Res) {
+		xil_printf("SD f_lseek failed \r\n");
+		return XST_FAILURE;
+	}
+
+	/* Write data to file.*/
+	Res = f_write(&fil, (const void*)SourceAddress, FileSize,
+			&NumBytesWritten);
+	if (Res) {
+		xil_printf("SD f_write failed \r\n");
+		return XST_FAILURE;
+	}
+
+	/* Pointer to beginning of file .*/
+	Res = f_lseek(&fil, 0);
+	if (Res) {
+		return XST_FAILURE;
+	}
+
+	/* Read data from file.	 */
+	Res = f_read(&fil, (void*)DestinationAddress, FileSize,
+			&NumBytesRead);
+	if (Res) {
+		return XST_FAILURE;
+	} else {
+		xil_printf("read successful!! number of byte read is : %d \r\n", NumBytesRead);
+	}
+
+	/* Data verification */
+	for(BuffCnt = 0; BuffCnt < FileSize; BuffCnt++){
+		xil_printf("content written : %d \r\n",DestinationAddress[BuffCnt]);
+		if(SourceAddress[BuffCnt] != DestinationAddress[BuffCnt]){
+			return XST_FAILURE;
+		}
+	}
+	Res = f_close(&fil);
+	if (Res) {
+		return XST_FAILURE;
+	}
+	return XST_SUCCESS;
+}
+
+
+int writeFile3(void){
+	FRESULT Res;
+	UINT NumBytesRead;
+	UINT NumBytesWritten;
+	u32 BuffCnt;
+	u32 FileSize = 1;
+	/*
+	 * To test logical drive 0, Path should be "0:/"
+	 * For logical drive 1, Path should be "1:/"
+	 */
+	TCHAR *Path = "0:/";
+
+	Platform = XGetPlatform_Info();
+
+	for(BuffCnt = 0; BuffCnt < FileSize; BuffCnt++){
+		SourceAddress[BuffCnt] = 5;
+	}
+
+	/* Register volume work area, initialize device	 */
+	Res = f_mount(&fatfs, Path, 0);
+
+	if (Res != FR_OK) {
+		xil_printf("SD f_mount failed \r\n");
+		return XST_FAILURE;
+	}
+
+	SD_File = (char *)FileName3;
+
+	Res = f_open(&fil, SD_File, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	if (Res) {
+		xil_printf("SD f_open failed \r\n");
+		return XST_FAILURE;
+	}
+
+	/* Pointer to beginning of file .	 */
+	Res = f_lseek(&fil, 0);
+	if (Res) {
+		xil_printf("SD f_lseek failed \r\n");
+		return XST_FAILURE;
+	}
+
+	/* Write data to file.*/
+	Res = f_write(&fil, (const void*)SourceAddress, FileSize,
+			&NumBytesWritten);
+	if (Res) {
+		xil_printf("SD f_write failed \r\n");
+		return XST_FAILURE;
+	}
+
+	/* Pointer to beginning of file .*/
+	Res = f_lseek(&fil, 0);
+	if (Res) {
+		return XST_FAILURE;
+	}
+
+	/* Read data from file.	 */
+	Res = f_read(&fil, (void*)DestinationAddress, FileSize,
+			&NumBytesRead);
+	if (Res) {
+		return XST_FAILURE;
+	} else {
+		xil_printf("read successful!! number of byte read is : %d \r\n", NumBytesRead);
+	}
+
+	/* Data verification */
+	for(BuffCnt = 0; BuffCnt < FileSize; BuffCnt++){
+		xil_printf("content written : %d \r\n",DestinationAddress[BuffCnt]);
+		if(SourceAddress[BuffCnt] != DestinationAddress[BuffCnt]){
+			return XST_FAILURE;
+		}
+	}
+	Res = f_close(&fil);
+	if (Res) {
+		return XST_FAILURE;
+	}
+	return XST_SUCCESS;
+}
+
+
 int FfsSdPolledExample(void)
 {
 	FRESULT Res;
