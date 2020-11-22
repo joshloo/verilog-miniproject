@@ -63,65 +63,32 @@ u8 SourceAddress[10*1024*1024] __attribute__ ((aligned(32)));
 #define SWS_CHANNEL 1								/* GPIO port for SWS */
 #define printf xil_printf							/* smaller, optimised printf */
 
-XGpio Gpio;											/* GPIO Device driver instance */
-
-int LEDOutputExample(void)
-{
-
-	volatile int Delay;
-	int Status;
-	int led = LED; /* Hold current LED value. Initialise to LED definition */
-
-		/* GPIO driver initialisation */
-		Status = XGpio_Initialize(&Gpio, GPIO_DEVICE_ID);
-		if (Status != XST_SUCCESS) {
-			return XST_FAILURE;
-		}
-
-		/*Set the direction for the LEDs to output. */
-		XGpio_SetDataDirection(&Gpio, LED_CHANNEL, 0x0);
-
-		/* Loop forever blinking the LED. */
-        //while (1) {
-				/* Write output to the LEDs. */
-				XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, led);
-
-				/* Flip LEDs. */
-		//		led = ~led;
-
-				/* Wait a small amount of time so that the LED blinking is visible. */
-		//		for (Delay = 0; Delay < LED_DELAY; Delay++);
-		//	}
-
-		return XST_SUCCESS; /* Should be unreachable */
-}
-
+XGpio Gpio0, Gpio1;									/* GPIO Device driver instance */
+// GPIO 0 is LED, GPIO 1 is switch
 
 int main(void)
 {
 	int Status;
 	int sws = 0;
 
-	xil_printf("The code for LED flip is here:\r\n");
-
-	/* Execute the LED output. */
-	Status = LEDOutputExample();
-	if (Status != XST_SUCCESS) {
-		xil_printf("GPIO output to the LEDs failed!\r\n");
-	}
-
-
 	xil_printf("The code for switch detection flip is here:\r\n");
 	// This code reads SWS settings from the switches.
-	Status = XGpio_Initialize(&Gpio, GPIO1_DEVICE_ID);
+	Status = XGpio_Initialize(&Gpio0, GPIO_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("tak ada GPIO0 \r\n");
+		return XST_FAILURE;
+	}
+	Status = XGpio_Initialize(&Gpio1, GPIO1_DEVICE_ID);
 	if (Status != XST_SUCCESS) {
 		xil_printf("tak ada GPIO1 \r\n");
 		return XST_FAILURE;
 	} else {
-		XGpio_SetDataDirection(&Gpio, SWS_CHANNEL, 0x1F); //set as input
+		XGpio_SetDataDirection(&Gpio1, SWS_CHANNEL, 0x1F); //set as input
+		XGpio_SetDataDirection(&Gpio0, LED_CHANNEL, 0x0); //set as output
 		while(1){
-			sws = XGpio_DiscreteRead(&Gpio, SWS_CHANNEL);
+			sws = XGpio_DiscreteRead(&Gpio1, SWS_CHANNEL);
 			xil_printf("sws 1 data read is %d \r\n", sws);
+			XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, sws); // directly write sws settings to led
 		}
 	}
 
