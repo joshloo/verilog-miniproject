@@ -95,7 +95,7 @@ int main(void)
 	if (Status != XST_SUCCESS) {
 		xil_printf("Write file 3 failed\r\n");
 	}
-	xil_printf("All 3 files written successfully"\r\n");
+	xil_printf("All 3 files written successfully\r\n");
 
 	xil_printf("The code for switch detection flip is here:\r\n");
 	// This code reads SWS settings from the switches.
