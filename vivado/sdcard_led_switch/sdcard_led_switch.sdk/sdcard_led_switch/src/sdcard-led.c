@@ -47,9 +47,10 @@ static FATFS fatfs;
  * To test logical drive 0, FileName should be "0:/<File name>" or
  * "<file_name>". For logical drive 1, FileName should be "1:/<file_name>"
  */
-static char FileName1[32] = "file1.bin";
-static char FileName2[32] = "file2.bin";
-static char FileName3[32] = "file3.bin";
+char FileName1[32] = "file1.bin";
+char FileName2[32] = "file2.bin";
+char FileName3[32] = "file3.bin";
+char FileName[32] = "file.bin";
 
 static char *SD_File;
 u32 Platform;
@@ -77,7 +78,7 @@ int main(void)
 	xil_printf("Program starts here.\r\n");
 	int Status;
 	int sws = 0;
-	int request1 = 0, request2 = 0, request3 = 0, request = 0;
+	int request1 = 0, request2 = 0, request3 = 0;
 
 	// this 3 functions write file 1 to 3.
 	// file1.bin now contains 8
@@ -235,7 +236,6 @@ int readFile(int fileNum) {
 	}
 	FRESULT Res;
 	UINT NumBytesRead;
-	UINT NumBytesWritten;
 	u32 BuffCnt;
 	u32 FileSize = 1;
 	/*
