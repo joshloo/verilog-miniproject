@@ -51,16 +51,26 @@ set rc [catch {
   set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/wt [current_project]
-  set_property parent.project_path E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.xpr [current_project]
-  set_property ip_output_repo E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/ip [current_project]
+  set_property webtalk.parent_dir E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/wt [current_project]
+  set_property parent.project_path E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.xpr [current_project]
+  set_property ip_repo_paths {
+  E:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
+  E:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
+  E:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
+  E:/XilinxSdk/verilog-miniproject/vivado/ip_repo/miniproject_ip_1.0
+  E:/XilinxSdk/verilog-miniproject/statemachine/core
+  E:/XilinxSdk/verilog-miniproject/vivado/ip_repo/statemachine_1.0
+  E:/XilinxSdk/verilog-miniproject/vivado/ip_repo/miniproject_1.0
+  E:/XilinxSdk/verilog-miniproject/vivado/ip_repo/miniprojectip_1.0
+} [current_project]
+  set_property ip_output_repo E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/synth_1/sdcard_led_switch_wrapper.dcp
+  add_files -quiet E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/synth_1/sdcard_led_switch_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -suppress
   set_param project.isImplRun true
-  add_files E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/sdcard_led_switch.bd
-  set_property is_locked true [get_files E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/sdcard_led_switch.bd]
+  add_files E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/sdcard_led_switch.bd
+  set_property is_locked true [get_files E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/sdcard_led_switch.bd]
   set_param project.isImplRun false
   set_param project.isImplRun true
   link_design -top sdcard_led_switch_wrapper -part xc7z010clg400-1

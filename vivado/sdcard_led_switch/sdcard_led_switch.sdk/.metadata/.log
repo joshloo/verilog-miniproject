@@ -6320,3 +6320,6 @@ java.lang.NullPointerException
 
 !ENTRY com.xilinx.sdk.utils 0 0 2020-11-21 17:00:26.489
 !MESSAGE XSCT command with result: [::hsi::utils::closesw E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-11-21 17:02:32.430
+!MESSAGE Executed Webtalk command

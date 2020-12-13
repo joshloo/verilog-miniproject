@@ -8,30 +8,40 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/wt [current_project]
-set_property parent.project_path E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.xpr [current_project]
+set_property webtalk.parent_dir E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/wt [current_project]
+set_property parent.project_path E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
-set_property ip_output_repo e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/ip [current_project]
+set_property ip_repo_paths {
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/miniproject_ip_1.0
+  e:/XilinxSdk/verilog-miniproject/statemachine/core
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/statemachine_1.0
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/miniproject_1.0
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/miniprojectip_1.0
+} [current_project]
+set_property ip_output_repo e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/hdl/sdcard_led_switch_wrapper.v
-add_files E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/sdcard_led_switch.bd
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_processing_system7_0_0/sdcard_led_switch_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_0_1/sdcard_led_switch_axi_gpio_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_0_1/sdcard_led_switch_axi_gpio_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_0_1/sdcard_led_switch_axi_gpio_0_1.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_rst_ps7_0_100M_0/sdcard_led_switch_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_rst_ps7_0_100M_0/sdcard_led_switch_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_rst_ps7_0_100M_0/sdcard_led_switch_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_1_0/sdcard_led_switch_axi_gpio_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_1_0/sdcard_led_switch_axi_gpio_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_1_0/sdcard_led_switch_axi_gpio_1_0.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_auto_pc_0/sdcard_led_switch_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/sdcard_led_switch_ooc.xdc]
-set_property is_locked true [get_files E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/sdcard_led_switch.bd]
+read_verilog -library xil_defaultlib E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/hdl/sdcard_led_switch_wrapper.v
+add_files E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/sdcard_led_switch.bd
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_processing_system7_0_0/sdcard_led_switch_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_0_1/sdcard_led_switch_axi_gpio_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_0_1/sdcard_led_switch_axi_gpio_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_0_1/sdcard_led_switch_axi_gpio_0_1.xdc]
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_rst_ps7_0_100M_0/sdcard_led_switch_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_rst_ps7_0_100M_0/sdcard_led_switch_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_rst_ps7_0_100M_0/sdcard_led_switch_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_1_0/sdcard_led_switch_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_1_0/sdcard_led_switch_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_1_0/sdcard_led_switch_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_auto_pc_0/sdcard_led_switch_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/sdcard_led_switch_ooc.xdc]
+set_property is_locked true [get_files E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/sdcard_led_switch.bd]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

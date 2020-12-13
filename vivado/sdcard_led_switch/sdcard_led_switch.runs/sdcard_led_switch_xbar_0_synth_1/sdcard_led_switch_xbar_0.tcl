@@ -10,17 +10,27 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/wt [current_project]
-set_property parent.project_path E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.xpr [current_project]
+set_property webtalk.parent_dir E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/wt [current_project]
+set_property parent.project_path E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
-set_property ip_output_repo e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/ip [current_project]
+set_property ip_repo_paths {
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/miniproject_ip_1.0
+  e:/XilinxSdk/verilog-miniproject/statemachine/core
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/statemachine_1.0
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/miniproject_1.0
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/miniprojectip_1.0
+} [current_project]
+set_property ip_output_repo e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0.xci
-set_property used_in_implementation false [get_files -all e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_ooc.xdc]
-set_property is_locked true [get_files e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0.xci]
+read_ip -quiet E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0.xci
+set_property used_in_implementation false [get_files -all e:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_ooc.xdc]
+set_property is_locked true [get_files E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0.xci]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -33,7 +43,7 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 
-set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1 -new_name sdcard_led_switch_xbar_0 -ip [get_ips sdcard_led_switch_xbar_0]]
+set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1 -new_name sdcard_led_switch_xbar_0 -ip [get_ips sdcard_led_switch_xbar_0]]
 
 if { $cached_ip eq {} } {
 
@@ -68,32 +78,32 @@ write_checkpoint -force -noxdef sdcard_led_switch_xbar_0.dcp
 catch { report_utilization -file sdcard_led_switch_xbar_0_utilization_synth.rpt -pb sdcard_led_switch_xbar_0_utilization_synth.pb }
 
 if { [catch {
-  file copy -force E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0.dcp e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0.dcp
+  file copy -force E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0.dcp E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_stub.v
+  write_verilog -force -mode synth_stub E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_stub.vhdl
+  write_vhdl -force -mode synth_stub E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_sim_netlist.v
+  write_verilog -force -mode funcsim E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -103,46 +113,46 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0.dcp e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0.dcp
+  file copy -force E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0.dcp E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0_stub.v e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_stub.v
+  file rename -force E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0_stub.v E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0_stub.vhdl e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_stub.vhdl
+  file rename -force E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0_stub.vhdl E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0_sim_netlist.v e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_sim_netlist.v
+  file rename -force E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0_sim_netlist.v E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0_sim_netlist.vhdl e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_sim_netlist.vhdl
+  file rename -force E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/sdcard_led_switch_xbar_0_synth_1/sdcard_led_switch_xbar_0_sim_netlist.vhdl E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 }; # end if cached_ip 
 
-if {[file isdir E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.ip_user_files/ip/sdcard_led_switch_xbar_0]} {
+if {[file isdir E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.ip_user_files/ip/sdcard_led_switch_xbar_0]} {
   catch { 
-    file copy -force e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_stub.v E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.ip_user_files/ip/sdcard_led_switch_xbar_0
+    file copy -force E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_stub.v E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.ip_user_files/ip/sdcard_led_switch_xbar_0
   }
 }
 
-if {[file isdir E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.ip_user_files/ip/sdcard_led_switch_xbar_0]} {
+if {[file isdir E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.ip_user_files/ip/sdcard_led_switch_xbar_0]} {
   catch { 
-    file copy -force e:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_stub.vhdl E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.ip_user_files/ip/sdcard_led_switch_xbar_0
+    file copy -force E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0_stub.vhdl E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.ip_user_files/ip/sdcard_led_switch_xbar_0
   }
 }

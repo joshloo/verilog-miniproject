@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/XilinxSdk/sdcard/src/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/impl_1'
+HD_PWD='E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

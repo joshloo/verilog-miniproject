@@ -22,6 +22,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sdcard_led_swit
 # IP: bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sdcard_led_switch_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sdcard_led_switch_xbar_0 || ORIG_REF_NAME==sdcard_led_switch_xbar_0}]
 
+# IP: bd/sdcard_led_switch/ip/sdcard_led_switch_arbitor_0_0/sdcard_led_switch_arbitor_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sdcard_led_switch_arbitor_0_0 || ORIG_REF_NAME==sdcard_led_switch_arbitor_0_0}]
+
 # IP: bd/sdcard_led_switch/ip/sdcard_led_switch_auto_pc_0/sdcard_led_switch_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sdcard_led_switch_auto_pc_0 || ORIG_REF_NAME==sdcard_led_switch_auto_pc_0}]
 
