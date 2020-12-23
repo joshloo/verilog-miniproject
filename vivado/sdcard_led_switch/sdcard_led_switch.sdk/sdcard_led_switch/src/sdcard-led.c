@@ -48,7 +48,8 @@ static FATFS fatfs;
  */
 char FileName[32] = "file.bin";
 
-static char *SD_File;
+static char *SD_FileRead;
+static char *SD_FileWrite;
 u32 Platform;
 
 u8 DestinationAddress[10*1024*1024] __attribute__ ((aligned(32)));
@@ -78,14 +79,16 @@ int main(void)
 	xil_printf("===================\r\n");
 	int Status;
 	int sws = 0;
+	int i = 0;
 	int request1 = 0, request2 = 0, request3 = 0;
 	int granted_request = 0;
+	int previous_request = 0;
 
 	xil_printf("Initializing file write..\r\n");
 	// this 3 functions write file 1 to 3.
-	// file1.bin now contains 8
-	// file2.bin now contains 3
-	// file3.bin now contains 5
+	// file1.bin now contains 5
+	// file2.bin now contains 10
+	// file3.bin now contains 15
 	Status = writeFile(1);
 	if (Status != XST_SUCCESS) {
 		xil_printf("Write file 1 failed\r\n");
@@ -116,10 +119,14 @@ int main(void)
 		XGpio_SetDataDirection(&Gpio0, LED_CHANNEL, 0x0); //set as output
 		while(1){
 			sws = XGpio_DiscreteRead(&Gpio1, SWS_CHANNEL);
+			if (previous_request == sws) {
+				continue;
+			}
+
 			xil_printf("SWS 1 data read is %d \r\n", sws);
 			//XGpio_DiscreteWrite(&Gpio0, LED_CHANNEL, sws); // directly write sws settings to led
 
-	        Xil_Out32(MY_ARBITOR, sws);
+	     //   Xil_Out32(MY_ARBITOR, sws);
 
 			// extract out the request to be printed in C settings
 			request1 = (sws & (1 << 2)) >> 2;
@@ -129,7 +136,8 @@ int main(void)
 			xil_printf("request2: %d \r\n", request2);
 			xil_printf("request3: %d \r\n", request3);
 
-	        granted_request = Xil_In32(MY_ARBITOR+4);
+	     //   granted_request = Xil_In32(MY_ARBITOR+4);
+			granted_request = sws;
 			xil_printf("granted_request: %d \r\n", granted_request);
 
 			request1 = (granted_request & (1 << 2)) >> 2;
@@ -152,26 +160,33 @@ int main(void)
 			if (request3 == 1) {
 				readFile(3);
 			}
+			previous_request = sws;
+	        for(i=0;i<300000; i++);
 		}
 	}
 	return XST_SUCCESS;
 }
 
 // This is the function to write file to SD card.
-int writeFile((int fileNum) {
+int writeFile(int fileNum) {
 	switch (fileNum) {
 		case 1:
-			FileName[32] = "file1.bin";
+			strncpy(FileName, "file1.bin", sizeof(FileName));
+		//	FileName = "file1.bin";
 			break;
 		case 2:
-			FileName[32] = "file2.bin";
+			strncpy(FileName, "file2.bin", sizeof(FileName));
+			//FileName = "file2.bin";
 			break;
 		case 3:
-			FileName[32] = "file3.bin";
+			strncpy(FileName, "file3.bin", sizeof(FileName));
+			//FileName = "file3.bin";
 			break;
 		default:
-			FileName[32] = "";
+			strncpy(FileName, "", sizeof(FileName));
+			//FileName = "";
 	}
+	xil_printf("filename to be written is: %s \r\n", FileName);
 	FRESULT Res;
 	UINT NumBytesRead;
 	UINT NumBytesWritten;
@@ -197,9 +212,9 @@ int writeFile((int fileNum) {
 		return XST_FAILURE;
 	}
 
-	SD_File = (char *)FileName;
+	SD_FileWrite = (char *)FileName;
 
-	Res = f_open(&fil, SD_File, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	Res = f_open(&fil, SD_FileWrite, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
 	if (Res) {
 		xil_printf("SD f_open failed \r\n");
 		return XST_FAILURE;
@@ -253,17 +268,18 @@ int writeFile((int fileNum) {
 int readFile(int fileNum) {
 	switch (fileNum) {
 		case 1:
-			FileName[32] = "file1.bin";
+			strncpy(FileName, "file1.bin", sizeof(FileName));
 			break;
 		case 2:
-			FileName[32] = "file2.bin";
+			strncpy(FileName, "file2.bin", sizeof(FileName));
 			break;
 		case 3:
-			FileName[32] = "file3.bin";
+			strncpy(FileName, "file3.bin", sizeof(FileName));
 			break;
 		default:
-			FileName[32] = "";
+			strncpy(FileName, "", sizeof(FileName));
 	}
+	xil_printf("filename to be read is: %s \r\n", FileName);
 	FRESULT Res;
 	UINT NumBytesRead;
 	u32 BuffCnt;
@@ -288,9 +304,9 @@ int readFile(int fileNum) {
 		return XST_FAILURE;
 	}
 
-	SD_File = (char *)FileName;
+	SD_FileRead = (char *)FileName;
 
-	Res = f_open(&fil, SD_File, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	Res = f_open(&fil, SD_FileRead, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
 	if (Res) {
 		xil_printf("SD f_open failed \r\n");
 		return XST_FAILURE;

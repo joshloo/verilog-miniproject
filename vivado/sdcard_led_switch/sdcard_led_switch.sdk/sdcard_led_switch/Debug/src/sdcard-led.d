@@ -20,7 +20,8 @@ src/sdcard-led.o src/sdcard-led.o: ../src/sdcard-led.c \
  ../../sdcard_led_switch_bsp/ps7_cortexa9_0/include/xil_cache.h \
  ../../sdcard_led_switch_bsp/ps7_cortexa9_0/include/xgpio.h \
  ../../sdcard_led_switch_bsp/ps7_cortexa9_0/include/xgpio_l.h \
- ../../sdcard_led_switch_bsp/ps7_cortexa9_0/include/xplatform_info.h
+ ../../sdcard_led_switch_bsp/ps7_cortexa9_0/include/xplatform_info.h \
+ ../../sdcard_led_switch_bsp/ps7_cortexa9_0/include/xil_io.h
 
 ../../sdcard_led_switch_bsp/ps7_cortexa9_0/include/xparameters.h:
 
@@ -65,3 +66,5 @@ src/sdcard-led.o src/sdcard-led.o: ../src/sdcard-led.c \
 ../../sdcard_led_switch_bsp/ps7_cortexa9_0/include/xgpio_l.h:
 
 ../../sdcard_led_switch_bsp/ps7_cortexa9_0/include/xplatform_info.h:
+
+../../sdcard_led_switch_bsp/ps7_cortexa9_0/include/xil_io.h:

@@ -1,557 +1,599 @@
-16:02:43 **** Build of project sdcard_led_switch_bsp ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
-make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_6/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling coresightps_dcc"
-arm-none-eabi-ar: creating ../../../lib/libxil.a
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling ddrps"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling emacps"
-"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
-make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling gpio"
-"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling gpiops"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_6/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scugic"
-xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
-  }
-  ^
-In file included from xscugic_g.c:41:0:
-xscugic.h:217:27: note: 'HandlerTable' declared here
-  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
-                           ^~~~~~~~~~~~
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling sdps"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling ttcps"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling usbps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling xadcps"
-'Finished building libraries'
-16:03:01 **** Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: sdcard_led_switch.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22328	   1148	  22568	  46044	   b3dc	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
-' '
-16:05:05 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c:29:16: fatal error: ff.h: No such file or directory
- #include "ff.h"
-                ^
-compilation terminated.
-make: *** [src/sdcard-led.o] Error 1
-16:05:41 **** Auto Build of project sdcard_led_switch_bsp ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
-make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_6/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
-make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling coresightps_dcc"
-arm-none-eabi-ar: creating ../../../lib/libxil.a
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling ddrps"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling emacps"
-"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
-make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling gpio"
-"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling gpiops"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_6/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scugic"
-xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
-  }
-  ^
-In file included from xscugic_g.c:41:0:
-xscugic.h:217:27: note: 'HandlerTable' declared here
-  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
-                           ^~~~~~~~~~~~
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling sdps"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_2/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling ttcps"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling usbps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling xadcps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
-make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling XilFFs Library"
-diskio.c:135:11: warning: 'ExtCsd' defined but not used [-Wunused-variable]
- static u8 ExtCsd[512] __attribute__ ((aligned(32)));
-           ^~~~~~
-ff.c: In function 'find_volume':
-ff.c:2610:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
-    && (LD_DWORD(fs->win+FSI_LeadSig) == 0x41615252U)
-    ^~
-'Finished building libraries'
-16:06:03 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
-make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o ./src/sdcard-led.o  ./src/helloworld.d ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
-' '
-16:06:03 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/helloworld.o ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-./src/sdcard-led.o: In function `main':
-E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:56: multiple definition of `main'
-./src/helloworld.o:E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/helloworld.c:54: first defined here
-collect2.exe: error: ld returned 1 exit status
-make: *** [sdcard_led_switch.elf] Error 1
-16:06:51 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
-make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o ./src/sdcard-led.o  ./src/helloworld.d ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
-' '
-16:06:51 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-'Finished building target: sdcard_led_switch.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  48224	   1220	20996640	21046084	1412344	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
-' '
-16:09:22 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-'Finished building target: sdcard_led_switch.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  48228	   1220	20996640	21046088	1412348	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
-' '
-16:09:28 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-'Finished building target: sdcard_led_switch.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  48276	   1220	20996640	21046136	1412378	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
-' '
-16:10:10 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-'Finished building target: sdcard_led_switch.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  49648	   1256	20996640	21047544	14128f8	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
-' '
-16:52:17 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,\ -lxilffs,\ -lgcc,-lc,--end-group
-c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find \: No such file or directory
-c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lxilffs,\
-c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lgcc,-lc,--end-group
-collect2.exe: error: ld returned 1 exit status
-make: *** [sdcard_led_switch.elf] Error 1
-16:53:25 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
-make clean 
-rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
-' '
-16:53:26 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,\ -lgcc,-lc,--end-group
-c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find \: No such file or directory
-c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lgcc,-lc,--end-group
-collect2.exe: error: ld returned 1 exit status
-make: *** [sdcard_led_switch.elf] Error 1
-16:53:27 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
-make clean 
-rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
-' '
-16:53:27 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,\ -lgcc,-lc,--end-group
-c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find \: No such file or directory
-c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lgcc,-lc,--end-group
-collect2.exe: error: ld returned 1 exit status
-make: *** [sdcard_led_switch.elf] Error 1
-16:53:56 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
-make clean 
-rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
-' '
-16:53:56 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,\ -lgcc,-lc,--end-group
-c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find \: No such file or directory
-c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lgcc,-lc,--end-group
-collect2.exe: error: ld returned 1 exit status
-make: *** [sdcard_led_switch.elf] Error 1
-16:54:32 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+21:13:47 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-16:54:35 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
-make clean 
-rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
-' '
-16:54:35 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+21:13:51 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
+make: Nothing to be done for `main-build'.
+21:35:17 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
 ' '
 'Building file: ../src/sdcard-led.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-./src/sdcard-led.o: In function `FfsSdPolledExample':
-E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:153: undefined reference to `f_mount'
-E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:168: undefined reference to `f_open'
-E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:175: undefined reference to `f_lseek'
-E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:182: undefined reference to `f_write'
-E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:190: undefined reference to `f_lseek'
-E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:196: undefined reference to `f_read'
-E:\XilinxSdk\sdcard\src\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\sdcard_led_switch\Debug/../src/sdcard-led.c:208: undefined reference to `f_close'
-collect2.exe: error: ld returned 1 exit status
-make: *** [sdcard_led_switch.elf] Error 1
-17:00:08 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
-make clean 
-rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
-' '
-17:00:08 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+../src/sdcard-led.c: In function 'main':
+../src/sdcard-led.c:156:14: error: 'i' undeclared (first use in this function)
+          for(i=0;i<300000; i++);
+              ^
+../src/sdcard-led.c:156:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:166:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:169:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:172:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:175:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:258:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:261:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:264:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:267:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+make: *** [src/sdcard-led.o] Error 1
+21:35:28 **** Auto Build of configuration Debug for project sdcard_led_switch ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
 ' '
 'Building file: ../src/sdcard-led.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:167:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:170:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:173:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:176:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:259:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:262:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:265:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:268:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
 'Finished building: ../src/sdcard-led.c'
 ' '
 'Building target: sdcard_led_switch.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-xilffs,--end-group
-c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: unrecognised option: -xilffs
-collect2.exe: error: ld returned 1 exit status
-make: *** [sdcard_led_switch.elf] Error 1
-17:00:09 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
-make clean 
-rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
+'Finished building target: sdcard_led_switch.elf'
 ' '
-17:00:09 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51408	   1256	20996640	21049304	1412fd8	sdcard_led_switch.elf
+'Finished building: sdcard_led_switch.elf.size'
+' '
+21:35:34 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
+make: Nothing to be done for `main-build'.
+21:36:08 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:42:00 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:42:52 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:44:27 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
 ' '
 'Building file: ../src/sdcard-led.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'main':
+../src/sdcard-led.c:84:6: warning: unused variable 'previous_request' [-Wunused-variable]
+  int previous_request = 0;
+      ^~~~~~~~~~~~~~~~
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:168:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:171:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:174:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:177:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:260:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:263:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:266:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:269:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
 'Finished building: ../src/sdcard-led.c'
 ' '
 'Building target: sdcard_led_switch.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-xilffs,--end-group
-c:/xilinx/sdk/2017.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: unrecognised option: -xilffs
-collect2.exe: error: ld returned 1 exit status
-make: *** [sdcard_led_switch.elf] Error 1
-17:00:37 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
-make clean 
-rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
+'Finished building target: sdcard_led_switch.elf'
 ' '
-17:00:37 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51408	   1256	20996640	21049304	1412fd8	sdcard_led_switch.elf
+'Finished building: sdcard_led_switch.elf.size'
+' '
+21:45:40 **** Auto Build of configuration Debug for project sdcard_led_switch ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/platform.c'
+'Building file: ../src/sdcard-led.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:172:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:175:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:178:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:181:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:264:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:267:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:270:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:273:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
+'Finished building target: sdcard_led_switch.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51408	   1256	20996640	21049304	1412fd8	sdcard_led_switch.elf
+'Finished building: sdcard_led_switch.elf.size'
+' '
+21:45:46 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:172:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:175:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:178:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:181:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:264:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:267:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:270:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:273:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
+'Finished building target: sdcard_led_switch.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51408	   1256	20996640	21049304	1412fd8	sdcard_led_switch.elf
+'Finished building: sdcard_led_switch.elf.size'
+' '
+21:46:10 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:173:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:176:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:179:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:182:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:265:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:268:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:271:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:274:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
+'Finished building target: sdcard_led_switch.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51408	   1256	20996640	21049304	1412fd8	sdcard_led_switch.elf
+'Finished building: sdcard_led_switch.elf.size'
+' '
+21:46:17 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:173:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:176:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:179:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:182:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:265:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:268:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:271:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:274:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
+'Finished building target: sdcard_led_switch.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51408	   1256	20996640	21049304	1412fd8	sdcard_led_switch.elf
+'Finished building: sdcard_led_switch.elf.size'
+' '
+21:46:44 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:50:56 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:173:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:176:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:179:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:182:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:266:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:269:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:272:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:275:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
+'Finished building target: sdcard_led_switch.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51508	   1256	20996640	21049404	141303c	sdcard_led_switch.elf
+'Finished building: sdcard_led_switch.elf.size'
+' '
+21:51:05 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:51:49 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:173:13: error: assignment to expression with array type
+    FileName = "file1.bin";
+             ^
+../src/sdcard-led.c:176:13: error: assignment to expression with array type
+    FileName = "file2.bin";
+             ^
+../src/sdcard-led.c:179:13: error: assignment to expression with array type
+    FileName = "file3.bin";
+             ^
+../src/sdcard-led.c:182:13: error: assignment to expression with array type
+    FileName = "";
+             ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:266:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file1.bin";
+                 ^
+../src/sdcard-led.c:269:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file2.bin";
+                 ^
+../src/sdcard-led.c:272:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "file3.bin";
+                 ^
+../src/sdcard-led.c:275:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    FileName[32] = "";
+                 ^
+make: *** [src/sdcard-led.o] Error 1
+21:51:57 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:173:13: error: assignment to expression with array type
+    FileName = "file1.bin";
+             ^
+../src/sdcard-led.c:176:13: error: assignment to expression with array type
+    FileName = "file2.bin";
+             ^
+../src/sdcard-led.c:179:13: error: assignment to expression with array type
+    FileName = "file3.bin";
+             ^
+../src/sdcard-led.c:182:13: error: assignment to expression with array type
+    FileName = "";
+             ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:266:13: error: assignment to expression with array type
+    FileName = "file1.bin";
+             ^
+../src/sdcard-led.c:269:13: error: assignment to expression with array type
+    FileName = "file2.bin";
+             ^
+../src/sdcard-led.c:272:13: error: assignment to expression with array type
+    FileName = "file3.bin";
+             ^
+../src/sdcard-led.c:275:13: error: assignment to expression with array type
+    FileName = "";
+             ^
+make: *** [src/sdcard-led.o] Error 1
+21:52:11 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:173:13: error: assignment to expression with array type
+    FileName = "file1.bin";
+             ^
+../src/sdcard-led.c:176:13: error: assignment to expression with array type
+    FileName = "file2.bin";
+             ^
+../src/sdcard-led.c:179:13: error: assignment to expression with array type
+    FileName = "file3.bin";
+             ^
+../src/sdcard-led.c:182:13: error: assignment to expression with array type
+    FileName = "";
+             ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:266:13: error: expected expression before ']' token
+    FileName[] = "file1.bin";
+             ^
+../src/sdcard-led.c:269:13: error: expected expression before ']' token
+    FileName[] = "file2.bin";
+             ^
+../src/sdcard-led.c:272:13: error: expected expression before ']' token
+    FileName[] = "file3.bin";
+             ^
+../src/sdcard-led.c:275:13: error: expected expression before ']' token
+    FileName[] = "";
+             ^
+make: *** [src/sdcard-led.o] Error 1
+21:53:59 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:174:13: error: assignment to expression with array type
+    FileName = "file1.bin";
+             ^
+../src/sdcard-led.c:177:13: error: assignment to expression with array type
+    FileName = "file2.bin";
+             ^
+../src/sdcard-led.c:180:13: error: assignment to expression with array type
+    FileName = "file3.bin";
+             ^
+../src/sdcard-led.c:183:13: error: assignment to expression with array type
+    FileName = "";
+             ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:267:13: error: expected expression before ']' token
+    FileName[] = "file1.bin";
+             ^
+../src/sdcard-led.c:270:13: error: expected expression before ']' token
+    FileName[] = "file2.bin";
+             ^
+../src/sdcard-led.c:273:13: error: expected expression before ']' token
+    FileName[] = "file3.bin";
+             ^
+../src/sdcard-led.c:276:13: error: expected expression before ']' token
+    FileName[] = "";
+             ^
+make: *** [src/sdcard-led.o] Error 1
+21:54:05 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:177:13: error: assignment to expression with array type
+    FileName = "file2.bin";
+             ^
+../src/sdcard-led.c:180:13: error: assignment to expression with array type
+    FileName = "file3.bin";
+             ^
+../src/sdcard-led.c:183:13: error: assignment to expression with array type
+    FileName = "";
+             ^
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:267:13: error: expected expression before ']' token
+    FileName[] = "file1.bin";
+             ^
+../src/sdcard-led.c:270:13: error: expected expression before ']' token
+    FileName[] = "file2.bin";
+             ^
+../src/sdcard-led.c:273:13: error: expected expression before ']' token
+    FileName[] = "file3.bin";
+             ^
+../src/sdcard-led.c:276:13: error: expected expression before ']' token
+    FileName[] = "";
+             ^
+make: *** [src/sdcard-led.o] Error 1
+21:54:29 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:270:13: error: expected expression before ']' token
+    FileName[] = "file1.bin";
+             ^
+../src/sdcard-led.c:273:13: error: expected expression before ']' token
+    FileName[] = "file2.bin";
+             ^
+../src/sdcard-led.c:276:13: error: expected expression before ']' token
+    FileName[] = "file3.bin";
+             ^
+../src/sdcard-led.c:279:13: error: expected expression before ']' token
+    FileName[] = "";
+             ^
+make: *** [src/sdcard-led.o] Error 1
+21:55:05 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
 ' '
 'Building file: ../src/sdcard-led.c'
 'Invoking: ARM v7 gcc compiler'
@@ -566,21 +608,12 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  49648	   1256	20996640	21047544	14128f8	sdcard_led_switch.elf
+  51728	   1256	20996640	21049624	1413118	sdcard_led_switch.elf
 'Finished building: sdcard_led_switch.elf.size'
 ' '
-17:00:38 **** Clean-only build of configuration Debug for project sdcard_led_switch ****
-make clean 
-rm -rf  ./src/platform.o ./src/sdcard-led.o  ./src/platform.d ./src/sdcard-led.d  sdcard_led_switch.elf.size  sdcard_led_switch.elf
-' '
-17:00:38 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+21:55:20 **** Auto Build of configuration Debug for project sdcard_led_switch ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
 ' '
 'Building file: ../src/sdcard-led.c'
 'Invoking: ARM v7 gcc compiler'
@@ -595,6 +628,98 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  49648	   1256	20996640	21047544	14128f8	sdcard_led_switch.elf
+  51760	   1256	20996640	21049656	1413138	sdcard_led_switch.elf
 'Finished building: sdcard_led_switch.elf.size'
 ' '
+21:55:28 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:58:35 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:215:2: error: 'SD_File' undeclared (first use in this function)
+  SD_File = (char *)FileName;
+  ^~~~~~~
+../src/sdcard-led.c:215:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:307:2: error: 'SD_File' undeclared (first use in this function)
+  SD_File = (char *)FileName;
+  ^~~~~~~
+At top level:
+../src/sdcard-led.c:52:14: warning: 'SD_FileWrite' defined but not used [-Wunused-variable]
+ static char *SD_FileWrite;
+              ^~~~~~~~~~~~
+../src/sdcard-led.c:51:14: warning: 'SD_FileRead' defined but not used [-Wunused-variable]
+ static char *SD_FileRead;
+              ^~~~~~~~~~~
+make: *** [src/sdcard-led.o] Error 1
+21:58:47 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'writeFile':
+../src/sdcard-led.c:217:21: error: 'SD_File' undeclared (first use in this function)
+  Res = f_open(&fil, SD_File, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+                     ^~~~~~~
+../src/sdcard-led.c:217:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:307:2: error: 'SD_File' undeclared (first use in this function)
+  SD_File = (char *)FileName;
+  ^~~~~~~
+At top level:
+../src/sdcard-led.c:51:14: warning: 'SD_FileRead' defined but not used [-Wunused-variable]
+ static char *SD_FileRead;
+              ^~~~~~~~~~~
+make: *** [src/sdcard-led.o] Error 1
+21:58:50 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+../src/sdcard-led.c: In function 'readFile':
+../src/sdcard-led.c:307:2: error: 'SD_File' undeclared (first use in this function)
+  SD_File = (char *)FileName;
+  ^~~~~~~
+../src/sdcard-led.c:307:2: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../src/sdcard-led.c:51:14: warning: 'SD_FileRead' defined but not used [-Wunused-variable]
+ static char *SD_FileRead;
+              ^~~~~~~~~~~
+make: *** [src/sdcard-led.o] Error 1
+21:59:28 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/sdcard-led.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
+'Finished building: ../src/sdcard-led.c'
+' '
+'Building target: sdcard_led_switch.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
+'Finished building target: sdcard_led_switch.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51760	   1256	20996640	21049656	1413138	sdcard_led_switch.elf
+'Finished building: sdcard_led_switch.elf.size'
+' '
+21:59:34 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

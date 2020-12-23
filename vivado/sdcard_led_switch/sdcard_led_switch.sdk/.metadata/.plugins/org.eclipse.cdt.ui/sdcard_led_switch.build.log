@@ -1,28 +1,8 @@
-17:00:38 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+21:59:34 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
-'Finished building target: sdcard_led_switch.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  49648	   1256	20996640	21047544	14128f8	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
-' '
+make: Nothing to be done for `main-build'.
 
-17:00:39 Build Finished (took 859ms)
+21:59:34 Build Finished (took 202ms)
 
