@@ -374,10 +374,10 @@
 	      // Address decoding for reading registers
 	      case ( axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] )
 	        2'h0   : reg_data_out <= slv_reg0;
-	      //  2'h1   : reg_data_out <= granted_req[2:0];
-            2'h1   : reg_data_out <= slv_reg1;
-	        2'h2   : reg_data_out <= slv_reg2;
-	        2'h3   : reg_data_out <= slv_reg3;
+	        2'h1   : reg_data_out <= granted_req[2:0];
+          //  2'h1   : reg_data_out <= slv_reg1;
+	        2'h2   : reg_data_out <= 4'b1010;
+	        2'h3   : reg_data_out <= state;
 	        default : reg_data_out <= 0;
 	      endcase
 	end
@@ -397,6 +397,7 @@
 	      if (slv_reg_rden)
 	        begin
 	          axi_rdata <= reg_data_out;     // register read data
+             // axi_rdata <= granted_req[2:0];     // register read data
 	        end   
 	    end
 	end    
@@ -449,8 +450,8 @@
     end
 
     // Determine the next state
-    always @ (posedge S_AXI_ACLK or posedge S_AXI_ARESETN) begin
-        if (S_AXI_ARESETN)
+    always @ (posedge S_AXI_ACLK) begin
+        if ( S_AXI_ARESETN == 1'b0 )
             state <= STATE_IDLE;
         else
             case (state)
@@ -458,9 +459,9 @@
                     // Does not transition when no request
                     if (req[2:0] == 3'b000)
                         state <= STATE_IDLE;
-                    else if (req[0] == 1'b0)
+                    else if (req[2] == 1'b0)
                         state = STATE_ARBITOR_NONEG2;
-                    else if (req[0] == 1'b1)
+                    else if (req[2] == 1'b1)
                         state = STATE_ARBITOR_G2;
 
                 STATE_ARBITOR_NONEG2:

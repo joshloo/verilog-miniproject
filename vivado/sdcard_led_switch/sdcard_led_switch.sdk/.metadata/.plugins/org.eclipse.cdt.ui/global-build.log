@@ -1,724 +1,1363 @@
-21:13:47 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+12:15:37 **** Incremental Build of configuration Release for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-make: Nothing to be done for `main-build'.
-21:13:51 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-21:35:17 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
+'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'main':
-../src/sdcard-led.c:156:14: error: 'i' undeclared (first use in this function)
-          for(i=0;i<300000; i++);
-              ^
-../src/sdcard-led.c:156:14: note: each undeclared identifier is reported only once for each function it appears in
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:166:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:169:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:172:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:175:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:258:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:261:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:264:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:267:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-make: *** [src/sdcard-led.o] Error 1
-21:35:28 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+../src/miniproject.c:29:16: fatal error: ff.h: No such file or directory
+ #include "ff.h"
+                ^
+compilation terminated.
+make: *** [src/miniproject.o] Error 1
+
+12:15:37 Build Finished (took 506ms)
+
+12:15:37 **** Incremental Build of configuration Debug for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/sdcard-led.c'
+'Building file: ../src/miniproject.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:167:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:170:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:173:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:176:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:259:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:262:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:265:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:268:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-'Finished building: ../src/sdcard-led.c'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+../src/miniproject.c:29:16: fatal error: ff.h: No such file or directory
+ #include "ff.h"
+                ^
+compilation terminated.
+make: *** [src/miniproject.o] Error 1
+12:18:14 **** Auto Build of project miniproject_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/arbitor_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/arbitor_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/arbitor_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/arbitor_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling arbitor..."
+arbitor_selftest.c: In function 'ARBITOR_Reg_SelfTest':
+arbitor_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( ARBITOR_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+arbitor_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:217:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling XilFFs Library"
+diskio.c:135:11: warning: 'ExtCsd' defined but not used [-Wunused-variable]
+ static u8 ExtCsd[512] __attribute__ ((aligned(32)));
+           ^~~~~~
+ff.c: In function 'find_volume':
+ff.c:2610:4: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+    && (LD_DWORD(fs->win+FSI_LeadSig) == 0x41615252U)
+    ^~
+'Finished building libraries'
+12:18:32 **** Clean-only build of configuration Debug for project miniproject ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/miniproject.o ./src/platform.o  ./src/helloworld.d ./src/miniproject.d ./src/platform.d  miniproject.elf.size  miniproject.elf
 ' '
-'Building target: sdcard_led_switch.elf'
+12:18:32 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+'Finished building: ../src/miniproject.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: miniproject.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
-'Finished building target: sdcard_led_switch.elf'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  51408	   1256	20996640	21049304	1412fd8	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
+  51276	   1256	20997216	21049748	1413194	miniproject.elf
+'Finished building: miniproject.elf.size'
 ' '
-21:35:34 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+12:20:27 **** Auto Build of project miniproject_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/arbitor_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/arbitor_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/arbitor_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/arbitor_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling arbitor..."
+arbitor_selftest.c: In function 'ARBITOR_Reg_SelfTest':
+arbitor_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( ARBITOR_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+arbitor_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:217:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_2/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling XilFFs Library"
+'Finished building libraries'
+12:20:46 **** Auto Build of configuration Debug for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-make: Nothing to be done for `main-build'.
-21:36:08 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-21:42:00 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-21:42:52 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-21:44:27 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
+'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'main':
-../src/sdcard-led.c:84:6: warning: unused variable 'previous_request' [-Wunused-variable]
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+'Finished building: ../src/miniproject.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51276	   1256	20997216	21049748	1413194	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+12:20:52 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:21:47 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:22:10 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:24:39 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:25:07 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:25:39 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51340	   1256	20997216	21049812	14131d4	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+12:25:43 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:26:05 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51536	   1256	20997216	21050008	1413298	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+12:26:08 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:26:45 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51556	   1256	20997216	21050028	14132ac	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+12:26:48 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:43:44 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:44:05 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51492	   1256	20997216	21049964	141326c	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+12:44:08 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:44:18 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51428	   1256	20997216	21049900	141322c	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+12:44:22 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:44:41 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:45:18 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51556	   1256	20997216	21050028	14132ac	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+12:45:22 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:12:44 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:25:37 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:26:08 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51592	   1256	20997216	21050064	14132d0	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:26:11 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:33:32 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+../src/miniproject.c:79:1: error: unknown type name 'Xuint32'
+ Xuint32 *baseaddr_p = (Xuint32 *)MY_ARBITOR;
+ ^~~~~~~
+../src/miniproject.c:79:24: error: 'Xuint32' undeclared here (not in a function)
+ Xuint32 *baseaddr_p = (Xuint32 *)MY_ARBITOR;
+                        ^~~~~~~
+../src/miniproject.c:79:33: error: expected expression before ')' token
+ Xuint32 *baseaddr_p = (Xuint32 *)MY_ARBITOR;
+                                 ^
+make: *** [src/miniproject.o] Error 1
+14:34:02 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+../src/miniproject.c: In function 'main':
+../src/miniproject.c:138:10: error: unknown type name 'Xuint32'
+          Xuint32 *baseaddr_p = (Xuint32 *)MY_ARBITOR;
+          ^~~~~~~
+../src/miniproject.c:138:33: error: 'Xuint32' undeclared (first use in this function)
+          Xuint32 *baseaddr_p = (Xuint32 *)MY_ARBITOR;
+                                 ^~~~~~~
+../src/miniproject.c:138:33: note: each undeclared identifier is reported only once for each function it appears in
+../src/miniproject.c:138:42: error: expected expression before ')' token
+          Xuint32 *baseaddr_p = (Xuint32 *)MY_ARBITOR;
+                                          ^
+make: *** [src/miniproject.o] Error 1
+14:34:26 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51760	   1256	20997216	21050232	1413378	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:34:30 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:35:18 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51760	   1256	20997216	21050232	1413378	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:35:24 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:36:42 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51676	   1256	20997216	21050148	1413324	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:36:45 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:41:27 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:42:08 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51676	   1256	20997216	21050148	1413324	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:42:12 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:48:33 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51476	   1256	20997216	21049948	141325c	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:48:55 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51476	   1256	20997216	21049948	141325c	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:49:39 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:49:48 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:50:18 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:52:40 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:54:11 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51476	   1256	20997216	21049948	141325c	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:54:15 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:55:47 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51476	   1256	20997216	21049948	141325c	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:56:35 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51520	   1256	20997216	21049992	1413288	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:56:45 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51520	   1256	20997216	21049992	1413288	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:57:01 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51520	   1256	20997216	21049992	1413288	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:57:45 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51456	   1256	20997216	21049928	1413248	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:58:46 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/miniproject.c: In function 'main':
+../src/miniproject.c:94:6: warning: unused variable 'granted_request' [-Wunused-variable]
+  int granted_request = 0;
+      ^~~~~~~~~~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51248	   1256	20997216	21049720	1413178	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:59:11 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51424	   1256	20997216	21049896	1413228	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+14:59:19 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:00:13 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51424	   1256	20997216	21049896	1413228	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+15:00:22 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:00:52 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/miniproject.c: In function 'main':
+../src/miniproject.c:92:6: warning: unused variable 'i' [-Wunused-variable]
+  int i = 0;
+      ^
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51360	   1256	20997216	21049832	14131e8	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+15:00:55 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:01:15 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51424	   1256	20997216	21049896	1413228	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+15:01:35 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51424	   1256	20997216	21049896	1413228	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+15:01:51 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/miniproject.c: In function 'main':
+../src/miniproject.c:95:6: warning: variable 'previous_request' set but not used [-Wunused-but-set-variable]
   int previous_request = 0;
       ^~~~~~~~~~~~~~~~
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:168:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:171:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:174:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:177:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:260:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:263:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:266:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:269:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-'Finished building: ../src/sdcard-led.c'
+'Finished building: ../src/miniproject.c'
 ' '
-'Building target: sdcard_led_switch.elf'
+'Building target: miniproject.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
-'Finished building target: sdcard_led_switch.elf'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  51408	   1256	20996640	21049304	1412fd8	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
+  51424	   1256	20997216	21049896	1413228	miniproject.elf
+'Finished building: miniproject.elf.size'
 ' '
-21:45:40 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+15:02:32 **** Auto Build of configuration Debug for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/sdcard-led.c'
+'Building file: ../src/miniproject.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:172:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:175:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:178:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:181:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:264:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:267:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:270:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:273:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-'Finished building: ../src/sdcard-led.c'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/miniproject.c: In function 'main':
+../src/miniproject.c:95:6: warning: variable 'previous_request' set but not used [-Wunused-but-set-variable]
+  int previous_request = 0;
+      ^~~~~~~~~~~~~~~~
+'Finished building: ../src/miniproject.c'
 ' '
-'Building target: sdcard_led_switch.elf'
+'Building target: miniproject.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
-'Finished building target: sdcard_led_switch.elf'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  51408	   1256	20996640	21049304	1412fd8	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
+  51424	   1256	20997216	21049896	1413228	miniproject.elf
+'Finished building: miniproject.elf.size'
 ' '
-21:45:46 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:172:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:175:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:178:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:181:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:264:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:267:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:270:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:273:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
-'Finished building target: sdcard_led_switch.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  51408	   1256	20996640	21049304	1412fd8	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
-' '
-21:46:10 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:173:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:176:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:179:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:182:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:265:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:268:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:271:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:274:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
-'Finished building target: sdcard_led_switch.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  51408	   1256	20996640	21049304	1412fd8	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
-' '
-21:46:17 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:173:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:176:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:179:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:182:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:265:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:268:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:271:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:274:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
-'Finished building target: sdcard_led_switch.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  51408	   1256	20996640	21049304	1412fd8	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
-' '
-21:46:44 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+15:02:37 **** Incremental Build of configuration Debug for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-21:50:56 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+15:02:52 **** Auto Build of configuration Debug for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/sdcard-led.c'
+'Building file: ../src/miniproject.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:173:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:176:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:179:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:182:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:266:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:269:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:272:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:275:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-'Finished building: ../src/sdcard-led.c'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/miniproject.c: In function 'main':
+../src/miniproject.c:95:6: warning: variable 'previous_request' set but not used [-Wunused-but-set-variable]
+  int previous_request = 0;
+      ^~~~~~~~~~~~~~~~
+'Finished building: ../src/miniproject.c'
 ' '
-'Building target: sdcard_led_switch.elf'
+'Building target: miniproject.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
-'Finished building target: sdcard_led_switch.elf'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  51508	   1256	20996640	21049404	141303c	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
+  51424	   1256	20997216	21049896	1413228	miniproject.elf
+'Finished building: miniproject.elf.size'
 ' '
-21:51:05 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+15:02:55 **** Incremental Build of configuration Debug for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-21:51:49 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+15:03:24 **** Auto Build of configuration Debug for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/sdcard-led.c'
+'Building file: ../src/miniproject.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:173:13: error: assignment to expression with array type
-    FileName = "file1.bin";
-             ^
-../src/sdcard-led.c:176:13: error: assignment to expression with array type
-    FileName = "file2.bin";
-             ^
-../src/sdcard-led.c:179:13: error: assignment to expression with array type
-    FileName = "file3.bin";
-             ^
-../src/sdcard-led.c:182:13: error: assignment to expression with array type
-    FileName = "";
-             ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:266:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file1.bin";
-                 ^
-../src/sdcard-led.c:269:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file2.bin";
-                 ^
-../src/sdcard-led.c:272:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "file3.bin";
-                 ^
-../src/sdcard-led.c:275:17: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
-    FileName[32] = "";
-                 ^
-make: *** [src/sdcard-led.o] Error 1
-21:51:57 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/miniproject.c: In function 'main':
+../src/miniproject.c:95:6: warning: variable 'previous_request' set but not used [-Wunused-but-set-variable]
+  int previous_request = 0;
+      ^~~~~~~~~~~~~~~~
+'Finished building: ../src/miniproject.c'
 ' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:173:13: error: assignment to expression with array type
-    FileName = "file1.bin";
-             ^
-../src/sdcard-led.c:176:13: error: assignment to expression with array type
-    FileName = "file2.bin";
-             ^
-../src/sdcard-led.c:179:13: error: assignment to expression with array type
-    FileName = "file3.bin";
-             ^
-../src/sdcard-led.c:182:13: error: assignment to expression with array type
-    FileName = "";
-             ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:266:13: error: assignment to expression with array type
-    FileName = "file1.bin";
-             ^
-../src/sdcard-led.c:269:13: error: assignment to expression with array type
-    FileName = "file2.bin";
-             ^
-../src/sdcard-led.c:272:13: error: assignment to expression with array type
-    FileName = "file3.bin";
-             ^
-../src/sdcard-led.c:275:13: error: assignment to expression with array type
-    FileName = "";
-             ^
-make: *** [src/sdcard-led.o] Error 1
-21:52:11 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:173:13: error: assignment to expression with array type
-    FileName = "file1.bin";
-             ^
-../src/sdcard-led.c:176:13: error: assignment to expression with array type
-    FileName = "file2.bin";
-             ^
-../src/sdcard-led.c:179:13: error: assignment to expression with array type
-    FileName = "file3.bin";
-             ^
-../src/sdcard-led.c:182:13: error: assignment to expression with array type
-    FileName = "";
-             ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:266:13: error: expected expression before ']' token
-    FileName[] = "file1.bin";
-             ^
-../src/sdcard-led.c:269:13: error: expected expression before ']' token
-    FileName[] = "file2.bin";
-             ^
-../src/sdcard-led.c:272:13: error: expected expression before ']' token
-    FileName[] = "file3.bin";
-             ^
-../src/sdcard-led.c:275:13: error: expected expression before ']' token
-    FileName[] = "";
-             ^
-make: *** [src/sdcard-led.o] Error 1
-21:53:59 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:174:13: error: assignment to expression with array type
-    FileName = "file1.bin";
-             ^
-../src/sdcard-led.c:177:13: error: assignment to expression with array type
-    FileName = "file2.bin";
-             ^
-../src/sdcard-led.c:180:13: error: assignment to expression with array type
-    FileName = "file3.bin";
-             ^
-../src/sdcard-led.c:183:13: error: assignment to expression with array type
-    FileName = "";
-             ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:267:13: error: expected expression before ']' token
-    FileName[] = "file1.bin";
-             ^
-../src/sdcard-led.c:270:13: error: expected expression before ']' token
-    FileName[] = "file2.bin";
-             ^
-../src/sdcard-led.c:273:13: error: expected expression before ']' token
-    FileName[] = "file3.bin";
-             ^
-../src/sdcard-led.c:276:13: error: expected expression before ']' token
-    FileName[] = "";
-             ^
-make: *** [src/sdcard-led.o] Error 1
-21:54:05 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:177:13: error: assignment to expression with array type
-    FileName = "file2.bin";
-             ^
-../src/sdcard-led.c:180:13: error: assignment to expression with array type
-    FileName = "file3.bin";
-             ^
-../src/sdcard-led.c:183:13: error: assignment to expression with array type
-    FileName = "";
-             ^
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:267:13: error: expected expression before ']' token
-    FileName[] = "file1.bin";
-             ^
-../src/sdcard-led.c:270:13: error: expected expression before ']' token
-    FileName[] = "file2.bin";
-             ^
-../src/sdcard-led.c:273:13: error: expected expression before ']' token
-    FileName[] = "file3.bin";
-             ^
-../src/sdcard-led.c:276:13: error: expected expression before ']' token
-    FileName[] = "";
-             ^
-make: *** [src/sdcard-led.o] Error 1
-21:54:29 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:270:13: error: expected expression before ']' token
-    FileName[] = "file1.bin";
-             ^
-../src/sdcard-led.c:273:13: error: expected expression before ']' token
-    FileName[] = "file2.bin";
-             ^
-../src/sdcard-led.c:276:13: error: expected expression before ']' token
-    FileName[] = "file3.bin";
-             ^
-../src/sdcard-led.c:279:13: error: expected expression before ']' token
-    FileName[] = "";
-             ^
-make: *** [src/sdcard-led.o] Error 1
-21:55:05 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
+'Building target: miniproject.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
-'Finished building target: sdcard_led_switch.elf'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  51728	   1256	20996640	21049624	1413118	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
+  51424	   1256	20997216	21049896	1413228	miniproject.elf
+'Finished building: miniproject.elf.size'
 ' '
-21:55:20 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+15:03:31 **** Auto Build of configuration Debug for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/sdcard-led.c'
+'Building file: ../src/miniproject.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/miniproject.c: In function 'main':
+../src/miniproject.c:95:6: warning: variable 'previous_request' set but not used [-Wunused-but-set-variable]
+  int previous_request = 0;
+      ^~~~~~~~~~~~~~~~
+'Finished building: ../src/miniproject.c'
 ' '
-'Building target: sdcard_led_switch.elf'
+'Building target: miniproject.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
-'Finished building target: sdcard_led_switch.elf'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  51760	   1256	20996640	21049656	1413138	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
+  51424	   1256	20997216	21049896	1413228	miniproject.elf
+'Finished building: miniproject.elf.size'
 ' '
-21:55:28 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+15:03:35 **** Incremental Build of configuration Debug for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-21:58:35 **** Auto Build of configuration Debug for project sdcard_led_switch ****
+15:04:53 **** Auto Build of configuration Debug for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/sdcard-led.c'
+'Building file: ../src/miniproject.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:215:2: error: 'SD_File' undeclared (first use in this function)
-  SD_File = (char *)FileName;
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
   ^~~~~~~
-../src/sdcard-led.c:215:2: note: each undeclared identifier is reported only once for each function it appears in
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:307:2: error: 'SD_File' undeclared (first use in this function)
-  SD_File = (char *)FileName;
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
   ^~~~~~~
-At top level:
-../src/sdcard-led.c:52:14: warning: 'SD_FileWrite' defined but not used [-Wunused-variable]
- static char *SD_FileWrite;
-              ^~~~~~~~~~~~
-../src/sdcard-led.c:51:14: warning: 'SD_FileRead' defined but not used [-Wunused-variable]
- static char *SD_FileRead;
-              ^~~~~~~~~~~
-make: *** [src/sdcard-led.o] Error 1
-21:58:47 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+../src/miniproject.c: In function 'main':
+../src/miniproject.c:95:6: warning: variable 'previous_request' set but not used [-Wunused-but-set-variable]
+  int previous_request = 0;
+      ^~~~~~~~~~~~~~~~
+'Finished building: ../src/miniproject.c'
 ' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'writeFile':
-../src/sdcard-led.c:217:21: error: 'SD_File' undeclared (first use in this function)
-  Res = f_open(&fil, SD_File, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
-                     ^~~~~~~
-../src/sdcard-led.c:217:21: note: each undeclared identifier is reported only once for each function it appears in
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:307:2: error: 'SD_File' undeclared (first use in this function)
-  SD_File = (char *)FileName;
-  ^~~~~~~
-At top level:
-../src/sdcard-led.c:51:14: warning: 'SD_FileRead' defined but not used [-Wunused-variable]
- static char *SD_FileRead;
-              ^~~~~~~~~~~
-make: *** [src/sdcard-led.o] Error 1
-21:58:50 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-../src/sdcard-led.c: In function 'readFile':
-../src/sdcard-led.c:307:2: error: 'SD_File' undeclared (first use in this function)
-  SD_File = (char *)FileName;
-  ^~~~~~~
-../src/sdcard-led.c:307:2: note: each undeclared identifier is reported only once for each function it appears in
-At top level:
-../src/sdcard-led.c:51:14: warning: 'SD_FileRead' defined but not used [-Wunused-variable]
- static char *SD_FileRead;
-              ^~~~~~~~~~~
-make: *** [src/sdcard-led.o] Error 1
-21:59:28 **** Auto Build of configuration Debug for project sdcard_led_switch ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/sdcard-led.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard-led.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../sdcard_led_switch_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sdcard-led.d" -MT"src/sdcard-led.o" -o "src/sdcard-led.o" "../src/sdcard-led.c"
-'Finished building: ../src/sdcard-led.c'
-' '
-'Building target: sdcard_led_switch.elf'
+'Building target: miniproject.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../sdcard_led_switch_bsp/ps7_cortexa9_0/lib -o "sdcard_led_switch.elf"  ./src/platform.o ./src/sdcard-led.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group
-'Finished building target: sdcard_led_switch.elf'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sdcard_led_switch.elf  |tee "sdcard_led_switch.elf.size"
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  51760	   1256	20996640	21049656	1413138	sdcard_led_switch.elf
-'Finished building: sdcard_led_switch.elf.size'
+  51408	   1256	20997216	21049880	1413218	miniproject.elf
+'Finished building: miniproject.elf.size'
 ' '
-21:59:34 **** Incremental Build of configuration Debug for project sdcard_led_switch ****
+15:04:55 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:11:18 **** Incremental Build of configuration Debug for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '

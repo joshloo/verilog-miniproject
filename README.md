@@ -14,3 +14,7 @@ SDK Properties -> C/C++ Build -> Settings -> gcc linker -> Inferred Options -> S
 In Software Platform Inferred Flags options, add '-lxilffs'.  
 
 C file resides in vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch/src/sdcard-led.c  
+
+If there's error about no ff.h is found, right click the bsp folder, do the below
+
+Board Support Package Settings -> Overview -> tick xilffs (Press OK)
