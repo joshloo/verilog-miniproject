@@ -1,0 +1,37 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Mon Jan  4 12:36:30 2021
+| Host         : DESKTOP-JJ8P2MG running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sdcard_led_switch_arbitor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of sdcard_led_switch_arbitor_0_0 (xilinx.com:user:arbitor:1.0) from (Rev. 4) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Mon Jan  4 12:28:28 2021
+| Host         : DESKTOP-JJ8P2MG running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sdcard_led_switch_arbitor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of sdcard_led_switch_arbitor_0_0 (xilinx.com:user:arbitor:1.0) from (Rev. 3) to (Rev. 4)
+
