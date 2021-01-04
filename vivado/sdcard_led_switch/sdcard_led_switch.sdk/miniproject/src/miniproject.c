@@ -155,9 +155,9 @@ int main(void)
 			xil_printf("Request : 1 is %d , 2 is %d, 3 is %d\r\n", request1, request2, request3);
 			*/
 
-	        /*
+			/*
 			// mock granted request directly to the input
-	        granted_request = sws;
+			granted_request = sws;
 			xil_printf("granted_request value: %d \r\n", granted_request);
 			*/
 			granted_request = *(baseaddr_p+1);
