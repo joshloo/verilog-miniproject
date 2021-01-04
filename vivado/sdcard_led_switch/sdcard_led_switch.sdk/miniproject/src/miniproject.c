@@ -139,13 +139,13 @@ int main(void)
 			//xil_printf("SWS data is %d \r\n", sws);
 			XGpio_DiscreteWrite(&Gpio0, LED_CHANNEL, sws); // directly write sws settings to led
 
-	        Xuint32 *baseaddr_p = (Xuint32 *)MY_ARBITOR;
-		    *(baseaddr_p+0) = sws;
-	        xil_printf("Wrote (Switch)  : 0x%08x \n\r", *(baseaddr_p+0));
-	        xil_printf("Read (Granted)  : 0x%08x \n\r", *(baseaddr_p+1));
-	        // This always reads as A, it is used as sanity check
-	        // xil_printf("Read : 0x%08x \n\r", *(baseaddr_p+2));
-	        xil_printf("Read (State)    : 0x%08x \n\r", *(baseaddr_p+3));
+			Xuint32 *baseaddr_p = (Xuint32 *)MY_ARBITOR;
+			*(baseaddr_p+0) = sws;
+			xil_printf("Wrote (Switch)  : 0x%08x \n\r", *(baseaddr_p+0));
+			xil_printf("Read (Granted)  : 0x%08x \n\r", *(baseaddr_p+1));
+			// This always reads as A, it is used as sanity check
+			// xil_printf("Read : 0x%08x \n\r", *(baseaddr_p+2));
+			xil_printf("Read (State)    : 0x%08x \n\r", *(baseaddr_p+3));
 
 			/*
 			// extract out the request to be printed in C settings
@@ -160,7 +160,7 @@ int main(void)
 	        granted_request = sws;
 			xil_printf("granted_request value: %d \r\n", granted_request);
 			*/
-	        granted_request = *(baseaddr_p+1);
+			granted_request = *(baseaddr_p+1);
 
 			request3 = (granted_request & (1 << 2)) >> 2;
 			request2 = (granted_request & (1 << 1)) >> 1;
@@ -182,8 +182,8 @@ int main(void)
 				Status = readFile(3);
 			}
 			previous_request = sws;
-	        for(i=0;i<300000000; i++);
-	    	xil_printf("**************************\r\n");
+			for(i=0;i<300000000; i++);
+			xil_printf("**************************\r\n");
 		}
 	}
 	return XST_SUCCESS;
