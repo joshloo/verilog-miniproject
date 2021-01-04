@@ -40,13 +40,20 @@ int writeFile(int fileNum);
 int readFile(int fileNum);
 
 /************************** Variable Definitions *****************************/
-static FIL fil;		/* File object */
+static FIL fil_read;		/* File object */
+static FIL fil_write;		/* File object */
 static FATFS fatfs;
 /*
  * To test logical drive 0, FileName should be "0:/<File name>" or
  * "<file_name>". For logical drive 1, FileName should be "1:/<file_name>"
  */
-char FileName[32] = "file.bin";
+char FileName[32] = "file0.bin";
+
+#define FIRST_RUN  0
+
+#define FILE1_STR "file1.bin"
+#define FILE2_STR "file2.bin"
+#define FILE3_STR "file3.bin"
 
 static char *SD_FileRead;
 static char *SD_FileWrite;
@@ -84,35 +91,34 @@ int main(void)
 	int granted_request = 0;
 	int previous_request = 0;
 
-	xil_printf("Initializing file write..\r\n");
-	// this 3 functions write file 1 to 3.
-	// file1.bin now contains 5
-	// file2.bin now contains 10
-	// file3.bin now contains 15
-	Status = writeFile(1);
-	if (Status != XST_SUCCESS) {
-		xil_printf("Write file 1 failed\r\n");
+	if (FIRST_RUN) {
+		xil_printf("Initializing file write for first run only\r\n");
+		Status = writeFile(1);
+		if (Status != XST_SUCCESS) {
+			xil_printf("Write file 1 failed\n");
+		}
+		Status = writeFile(2);
+		if (Status != XST_SUCCESS) {
+			xil_printf("Write file 2 failed\n");
+		}
+		Status = writeFile(3);
+		if (Status != XST_SUCCESS) {
+			xil_printf("Write file 3 failed\n");
+		}
+		xil_printf("All 3 files written successfully..\r\n");
+		return 0;
 	}
-	Status = writeFile(2);
-	if (Status != XST_SUCCESS) {
-		xil_printf("Write file 2 failed\r\n");
-	}
-	Status = writeFile(3);
-	if (Status != XST_SUCCESS) {
-		xil_printf("Write file 3 failed\r\n");
-	}
-	xil_printf("All 3 files written successfully..\r\n");
 
 	xil_printf("Beginning switch detection\r\n");
 	// This code reads SWS settings from the switches.
 	Status = XGpio_Initialize(&Gpio0, GPIO_DEVICE_ID);
 	if (Status != XST_SUCCESS) {
-		xil_printf("tak ada GPIO0, returning...\r\n");
+		xil_printf("No GPIO0, returning...\r\n");
 		return XST_FAILURE;
 	}
 	Status = XGpio_Initialize(&Gpio1, GPIO1_DEVICE_ID);
 	if (Status != XST_SUCCESS) {
-		xil_printf("tak ada GPIO1, returning...\r\n");
+		xil_printf("No GPIO1, returning...\r\n");
 		return XST_FAILURE;
 	} else {
 		XGpio_SetDataDirection(&Gpio1, SWS_CHANNEL, 0x1F); //set as input
@@ -123,45 +129,44 @@ int main(void)
 				continue;
 			}
 
-			xil_printf("SWS 1 data read is %d \r\n", sws);
+	//		xil_printf("SWS data read is %d \r\n", sws);
 			//XGpio_DiscreteWrite(&Gpio0, LED_CHANNEL, sws); // directly write sws settings to led
 
-	     //   Xil_Out32(MY_ARBITOR, sws);
+	       // Xil_Out32(MY_ARBITOR, sws);
 
 			// extract out the request to be printed in C settings
 			request1 = (sws & (1 << 2)) >> 2;
 			request2 = (sws & (1 << 1)) >> 1;
 			request3 = (sws & (1 << 0)) >> 0;
-			xil_printf("request1: %d \r\n", request1);
-			xil_printf("request2: %d \r\n", request2);
-			xil_printf("request3: %d \r\n", request3);
+	//		xil_printf("Request : 1 is %d , 2 is %d, 3 is %d\r\n", request1, request2, request3);
 
-	     //   granted_request = Xil_In32(MY_ARBITOR+4);
+	      //  granted_request = Xil_In32(MY_ARBITOR+4);
+	//		xil_printf("granted_request from IP is %d \r\n", granted_request);
 			granted_request = sws;
-			xil_printf("granted_request: %d \r\n", granted_request);
+	//		xil_printf("granted_request value: %d \r\n", granted_request);
 
 			request1 = (granted_request & (1 << 2)) >> 2;
 			request2 = (granted_request & (1 << 1)) >> 1;
 			request3 = (granted_request & (1 << 0)) >> 0;
-			xil_printf("Granted request1: %d \r\n", request1);
-			xil_printf("Granted request2: %d \r\n", request2);
-			xil_printf("Granted request3: %d \r\n", request3);
+			xil_printf("**************************\r\n");
+			xil_printf("Granted request	: 1 is %d , 2 is %d, 3 is %d\r\n", request1, request2, request3);
 
 			// Write granted request to LED channel
 			XGpio_DiscreteWrite(&Gpio0, LED_CHANNEL, granted_request);
 
 			// state machine needs to be implemented here
 			if (request1 == 1) {
-				readFile(1);
+				Status = readFile(1);
 			}
 			if (request2 == 1) {
-				readFile(2);
+				Status = readFile(2);
 			}
 			if (request3 == 1) {
-				readFile(3);
+				Status = readFile(3);
 			}
 			previous_request = sws;
 	        for(i=0;i<300000; i++);
+	    	xil_printf("**************************\r\n");
 		}
 	}
 	return XST_SUCCESS;
@@ -171,20 +176,16 @@ int main(void)
 int writeFile(int fileNum) {
 	switch (fileNum) {
 		case 1:
-			strncpy(FileName, "file1.bin", sizeof(FileName));
-		//	FileName = "file1.bin";
+			strncpy(FileName, FILE1_STR, sizeof(FILE1_STR));
 			break;
 		case 2:
-			strncpy(FileName, "file2.bin", sizeof(FileName));
-			//FileName = "file2.bin";
+			strncpy(FileName, FILE2_STR, sizeof(FILE2_STR));
 			break;
 		case 3:
-			strncpy(FileName, "file3.bin", sizeof(FileName));
-			//FileName = "file3.bin";
+			strncpy(FileName, FILE3_STR, sizeof(FILE3_STR));
 			break;
 		default:
 			strncpy(FileName, "", sizeof(FileName));
-			//FileName = "";
 	}
 	xil_printf("filename to be written is: %s \r\n", FileName);
 	FRESULT Res;
@@ -201,7 +202,7 @@ int writeFile(int fileNum) {
 	Platform = XGetPlatform_Info();
 
 	for(BuffCnt = 0; BuffCnt < FileSize; BuffCnt++){
-		SourceAddress[BuffCnt] = fileNum*5;
+		SourceAddress[BuffCnt] = fileNum;
 	}
 
 	/* Register volume work area, initialize device	 */
@@ -214,21 +215,21 @@ int writeFile(int fileNum) {
 
 	SD_FileWrite = (char *)FileName;
 
-	Res = f_open(&fil, SD_FileWrite, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	Res = f_open(&fil_write, SD_FileWrite, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
 	if (Res) {
 		xil_printf("SD f_open failed \r\n");
 		return XST_FAILURE;
 	}
 
 	/* Pointer to beginning of file .	 */
-	Res = f_lseek(&fil, 0);
+	Res = f_lseek(&fil_write, 0);
 	if (Res) {
 		xil_printf("SD f_lseek failed \r\n");
 		return XST_FAILURE;
 	}
 
 	/* Write data to file.*/
-	Res = f_write(&fil, (const void*)SourceAddress, FileSize,
+	Res = f_write(&fil_write, (const void*)SourceAddress, FileSize,
 			&NumBytesWritten);
 	if (Res) {
 		xil_printf("SD f_write failed \r\n");
@@ -236,18 +237,16 @@ int writeFile(int fileNum) {
 	}
 
 	/* Pointer to beginning of file .*/
-	Res = f_lseek(&fil, 0);
+	Res = f_lseek(&fil_write, 0);
 	if (Res) {
 		return XST_FAILURE;
 	}
 
 	/* Read data from file.	 */
-	Res = f_read(&fil, (void*)DestinationAddress, FileSize,
+	Res = f_read(&fil_write, (void*)DestinationAddress, FileSize,
 			&NumBytesRead);
 	if (Res) {
 		return XST_FAILURE;
-	} else {
-		xil_printf("read successful!! number of byte read is : %d \r\n", NumBytesRead);
 	}
 
 	/* Data verification */
@@ -257,7 +256,7 @@ int writeFile(int fileNum) {
 			return XST_FAILURE;
 		}
 	}
-	Res = f_close(&fil);
+	Res = f_close(&fil_write);
 	if (Res) {
 		return XST_FAILURE;
 	}
@@ -268,13 +267,13 @@ int writeFile(int fileNum) {
 int readFile(int fileNum) {
 	switch (fileNum) {
 		case 1:
-			strncpy(FileName, "file1.bin", sizeof(FileName));
+			strncpy(FileName, FILE1_STR, sizeof(FileName));
 			break;
 		case 2:
-			strncpy(FileName, "file2.bin", sizeof(FileName));
+			strncpy(FileName, FILE2_STR, sizeof(FileName));
 			break;
 		case 3:
-			strncpy(FileName, "file3.bin", sizeof(FileName));
+			strncpy(FileName, FILE3_STR, sizeof(FileName));
 			break;
 		default:
 			strncpy(FileName, "", sizeof(FileName));
@@ -306,43 +305,38 @@ int readFile(int fileNum) {
 
 	SD_FileRead = (char *)FileName;
 
-	Res = f_open(&fil, SD_FileRead, FA_CREATE_ALWAYS | FA_WRITE | FA_READ);
+	Res = f_open(&fil_read, SD_FileRead, FA_READ);
 	if (Res) {
 		xil_printf("SD f_open failed \r\n");
 		return XST_FAILURE;
 	}
 
 	/* Pointer to beginning of file .	 */
-	Res = f_lseek(&fil, 0);
+	Res = f_lseek(&fil_read, 0);
 	if (Res) {
 		xil_printf("SD f_lseek failed \r\n");
 		return XST_FAILURE;
 	}
 
 	/* Pointer to beginning of file .*/
-	Res = f_lseek(&fil, 0);
+	Res = f_lseek(&fil_read, 0);
 	if (Res) {
 		return XST_FAILURE;
 	}
 
 	/* Read data from file.	 */
-	Res = f_read(&fil, (void*)DestinationAddress, FileSize,
+	Res = f_read(&fil_read, (void*)DestinationAddress, FileSize,
 		&NumBytesRead);
 	if (Res) {
 		return XST_FAILURE;
 	}
-	else {
-		xil_printf("Based on request, content read : \r\n");
-	}
 
+	xil_printf("Content read: \r\n");
 	/* Data verification */
 	for (BuffCnt = 0; BuffCnt < FileSize; BuffCnt++) {
 		xil_printf("%d \r\n", DestinationAddress[BuffCnt]);
-		if (SourceAddress[BuffCnt] != DestinationAddress[BuffCnt]) {
-			return XST_FAILURE;
-		}
 	}
-	Res = f_close(&fil);
+	Res = f_close(&fil_read);
 	if (Res) {
 		return XST_FAILURE;
 	}

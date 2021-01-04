@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  51760	   1256	20996640	21049656	1413138	sdcard_led_switch.elf
+ 104452	   2720	20999552	21106724	1421024	sdcard_led_switch.elf

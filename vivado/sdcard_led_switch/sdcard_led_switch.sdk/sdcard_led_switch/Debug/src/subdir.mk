@@ -7,16 +7,22 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 C_SRCS += \
+../src/Testff.c \
 ../src/platform.c \
-../src/sdcard-led.c 
+../src/sdcard-led.c \
+../src/testsd.c 
 
 OBJS += \
+./src/Testff.o \
 ./src/platform.o \
-./src/sdcard-led.o 
+./src/sdcard-led.o \
+./src/testsd.o 
 
 C_DEPS += \
+./src/Testff.d \
 ./src/platform.d \
-./src/sdcard-led.d 
+./src/sdcard-led.d \
+./src/testsd.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
