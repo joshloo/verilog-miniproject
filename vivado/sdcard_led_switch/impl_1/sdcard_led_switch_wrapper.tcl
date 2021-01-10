@@ -54,6 +54,7 @@ set rc [catch {
   set_property webtalk.parent_dir E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.cache/wt [current_project]
   set_property parent.project_path E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.xpr [current_project]
   set_property ip_repo_paths {
+  E:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_bad_1.0
   E:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
   E:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
   E:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0

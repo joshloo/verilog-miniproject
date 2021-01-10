@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1610253952">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1610255317">
   <File Type="RDS-PROPCONSTRS" Name="sdcard_led_switch_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="sdcard_led_switch_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="sdcard_led_switch_wrapper.vds"/>
@@ -32,6 +32,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_bad/design_bad.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="sdcard_led_switch_wrapper"/>
@@ -53,5 +61,4 @@
   <BlockFileSet Type="BlockSrcs" Name="sdcard_led_switch_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="sdcard_led_switch_rst_ps7_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="sdcard_led_switch_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="sdcard_led_switch_arbitor_0_1"/>
 </GenRun>

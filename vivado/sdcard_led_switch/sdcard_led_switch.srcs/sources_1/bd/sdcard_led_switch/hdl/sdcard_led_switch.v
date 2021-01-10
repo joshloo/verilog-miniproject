@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-//Date        : Sun Jan 10 12:45:49 2021
+//Date        : Sun Jan 10 13:08:34 2021
 //Host        : DESKTOP-JJ8P2MG running 64-bit major release  (build 9200)
 //Command     : generate_target sdcard_led_switch.bd
 //Design      : sdcard_led_switch
@@ -870,7 +870,7 @@ module s01_couplers_imp_168EMZS
   assign s01_couplers_to_s01_couplers_WVALID = S_AXI_wvalid;
 endmodule
 
-(* CORE_GENERATION_INFO = "sdcard_led_switch,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=sdcard_led_switch,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=13,da_board_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "sdcard_led_switch.hwdef" *) 
+(* CORE_GENERATION_INFO = "sdcard_led_switch,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=sdcard_led_switch,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=16,da_board_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "sdcard_led_switch.hwdef" *) 
 module sdcard_led_switch
    (DDR_addr,
     DDR_ba,
@@ -1040,7 +1040,7 @@ module sdcard_led_switch
 
   assign axi_gpio_1_GPIO_TRI_I = sws_4bits_tri_i[3:0];
   assign leds_4bits_tri_o[3:0] = axi_gpio_0_GPIO_TRI_O;
-  sdcard_led_switch_arbitor_0_1 arbitor_0
+  sdcard_led_switch_arbitor_0_0 arbitor_0
        (.s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(ps7_0_axi_periph_M02_AXI_ARADDR[3:0]),
         .s00_axi_aresetn(rst_ps7_0_100M_peripheral_aresetn),

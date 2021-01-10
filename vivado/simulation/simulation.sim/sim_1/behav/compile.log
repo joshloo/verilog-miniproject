@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/XilinxSdk/verilog-miniproject/statemachine/core/miniproject.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arbitor
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/XilinxSdk/verilog-miniproject/statemachine/tb/miniproject_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module miniproject_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/XilinxSdk/verilog-miniproject/vivado/simulation/simulation.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

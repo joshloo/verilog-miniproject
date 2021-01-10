@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Jan 10 13:36:01 2021
+# Process ID: 9532
+# Current directory: E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sim/sim_1/behav/xsim.dir/sdcard_led_switch_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sim/sim_1/behav/webtalk.log
+# Journal file: E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sim/sim_1/behav/xsim.dir/sdcard_led_switch_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan 10 13:36:01 2021...

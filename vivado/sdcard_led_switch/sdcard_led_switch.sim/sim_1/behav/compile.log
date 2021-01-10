@@ -1,0 +1,30 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_processing_system7_0_0/sim/sdcard_led_switch_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sdcard_led_switch_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_xbar_0/sim/sdcard_led_switch_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sdcard_led_switch_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/hdl/sdcard_led_switch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_M57VKN
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_989SD2
+INFO: [VRFC 10-311] analyzing module m02_couplers_imp_14QS105
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_1WGHQJT
+INFO: [VRFC 10-311] analyzing module s01_couplers_imp_168EMZS
+INFO: [VRFC 10-311] analyzing module sdcard_led_switch
+INFO: [VRFC 10-311] analyzing module sdcard_led_switch_ps7_0_axi_periph_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ipshared/83eb/hdl/arbitor_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arbitor_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ipshared/83eb/hdl/arbitor_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arbitor_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_arbitor_0_0/sim/sdcard_led_switch_arbitor_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sdcard_led_switch_arbitor_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_auto_pc_0/sim/sdcard_led_switch_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sdcard_led_switch_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/hdl/sdcard_led_switch_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sdcard_led_switch_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_0_1/sim/sdcard_led_switch_axi_gpio_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sdcard_led_switch_axi_gpio_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_rst_ps7_0_100M_0/sim/sdcard_led_switch_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sdcard_led_switch_rst_ps7_0_100M_0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_1_0/sim/sdcard_led_switch_axi_gpio_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sdcard_led_switch_axi_gpio_1_0

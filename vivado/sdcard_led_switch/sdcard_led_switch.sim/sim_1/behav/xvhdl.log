@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_0_1/sim/sdcard_led_switch_axi_gpio_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sdcard_led_switch_axi_gpio_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_rst_ps7_0_100M_0/sim/sdcard_led_switch_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sdcard_led_switch_rst_ps7_0_100M_0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.srcs/sources_1/bd/sdcard_led_switch/ip/sdcard_led_switch_axi_gpio_1_0/sim/sdcard_led_switch_axi_gpio_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sdcard_led_switch_axi_gpio_1_0

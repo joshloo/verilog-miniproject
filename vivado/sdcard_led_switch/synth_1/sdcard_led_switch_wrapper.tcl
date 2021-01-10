@@ -15,6 +15,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
 set_property ip_repo_paths {
+  e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_bad_1.0
   e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
   e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0
   e:/XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0

@@ -45,13 +45,17 @@ int readFile(int fileNum);
 static FIL fil_read;		/* File object */
 static FIL fil_write;		/* File object */
 static FATFS fatfs;
-/*
- * To test logical drive 0, FileName should be "0:/<File name>" or
- * "<file_name>". For logical drive 1, FileName should be "1:/<file_name>"
- */
 char FileName[32] = "file0.bin";
 
-#define FIRST_RUN  0
+// multiple flags used for program purpose
+#define FIRST_RUN	0 	// In any case of new sd card is being used, this should be set to 1
+						// so that the program will write 3 files to sd card and exit.
+#define DEBUG_ON	0	// Setting this to 1 triggers more debug prints to look into what is
+						// going on in FPGA and C code perspective
+#define AUTOMATION	0	// Setting this to 1 triggers auto request of 1, 2 and 3. without neededing
+						// to set the switches.
+#define NO_FPGA		1	// Setting this to 1 will take away FPGA block from the equation and assume
+						// system can handle multiple requests concurrently.
 
 #define FILE1_STR "file1.bin"
 #define FILE2_STR "file2.bin"
@@ -63,8 +67,6 @@ u32 Platform;
 
 u8 DestinationAddress[10*1024*1024] __attribute__ ((aligned(32)));
 u8 SourceAddress[10*1024*1024] __attribute__ ((aligned(32)));
-
-#define TEST 7
 
 /* Definitions */
 #define GPIO_DEVICE_ID  XPAR_AXI_GPIO_0_DEVICE_ID	/* GPIO device that LEDs are connected to */
@@ -92,7 +94,6 @@ int main(void)
 	int i = 0;
 	int request1 = 0, request2 = 0, request3 = 0;
 	int granted_request = 0;
-	int previous_request = 0;
 
 	if (FIRST_RUN) {
 		xil_printf("Initializing file write for first run only\r\n");
@@ -127,51 +128,38 @@ int main(void)
 		XGpio_SetDataDirection(&Gpio1, SWS_CHANNEL, 0x1F); //set as input
 		XGpio_SetDataDirection(&Gpio0, LED_CHANNEL, 0x0); //set as output
 		while(1){
-			sws = XGpio_DiscreteRead(&Gpio1, SWS_CHANNEL);
-
-			/*
-			// if blocking, then uncomment this block
-			if (previous_request == sws) {
-				continue;
+			if (AUTOMATION) {
+				sws++;
+			} else {
+				sws = XGpio_DiscreteRead(&Gpio1, SWS_CHANNEL);
 			}
-			*/
-
-			//xil_printf("SWS data is %d \r\n", sws);
-			XGpio_DiscreteWrite(&Gpio0, LED_CHANNEL, sws); // directly write sws settings to led
 
 			Xuint32 *baseaddr_p = (Xuint32 *)MY_ARBITOR;
 			*(baseaddr_p+0) = sws;
-			xil_printf("Wrote (Switch)  : 0x%08x \n\r", *(baseaddr_p+0));
-			xil_printf("Read (Granted)  : 0x%08x \n\r", *(baseaddr_p+1));
-			// This always reads as A, it is used as sanity check
-			// xil_printf("Read : 0x%08x \n\r", *(baseaddr_p+2));
-			xil_printf("Read (State)    : 0x%08x \n\r", *(baseaddr_p+3));
 
-			/*
-			// extract out the request to be printed in C settings
-			request3 = (sws & (1 << 2)) >> 2;
-			request2 = (sws & (1 << 1)) >> 1;
-			request1 = (sws & (1 << 0)) >> 0;
-			xil_printf("Request : 1 is %d , 2 is %d, 3 is %d\r\n", request1, request2, request3);
-			*/
+			if (DEBUG_ON){
+				xil_printf("Wrote (Switch)  : 0x%08x \n\r", *(baseaddr_p+0));
+				xil_printf("Read (Granted)  : 0x%08x \n\r", *(baseaddr_p+1));
+				xil_printf("Read (State)    : 0x%08x \n\r", *(baseaddr_p+3));
+				// This always reads as A in FPGA, it is used as sanity check
+				// xil_printf("Read : 0x%08x \n\r", *(baseaddr_p+2));
+			}
 
-			/*
-			// mock granted request directly to the input
-			granted_request = sws;
-			xil_printf("granted_request value: %d \r\n", granted_request);
-			*/
-			granted_request = *(baseaddr_p+1);
-
+			if (NO_FPGA) {
+				granted_request = sws;
+			} else {
+				granted_request = *(baseaddr_p+1);
+			}
 			request3 = (granted_request & (1 << 2)) >> 2;
 			request2 = (granted_request & (1 << 1)) >> 1;
 			request1 = (granted_request & (1 << 0)) >> 0;
-			xil_printf("**************************\r\n");
-			xil_printf("g3 is %d , g2 is %d, g1 is %d\r\n", request3, request2, request1);
-
+			if (DEBUG_ON){
+				xil_printf("**************************\r\n");
+				xil_printf("g3 is %d , g2 is %d, g1 is %d\r\n", request3, request2, request1);
+			}
 			// Write granted request to LED channel
 			XGpio_DiscreteWrite(&Gpio0, LED_CHANNEL, granted_request);
 
-			// state machine needs to be implemented here
 			if (request1 == 1) {
 				Status = readFile(1);
 			}
@@ -181,9 +169,7 @@ int main(void)
 			if (request3 == 1) {
 				Status = readFile(3);
 			}
-			previous_request = sws;
 			for(i=0;i<10000000; i++);
-			xil_printf("**************************\r\n");
 		}
 	}
 	return XST_SUCCESS;
@@ -295,7 +281,7 @@ int readFile(int fileNum) {
 		default:
 			strncpy(FileName, "", sizeof(FileName));
 	}
-	xil_printf("filename to be read is: %s \r\n", FileName);
+	if (DEBUG_ON) xil_printf("filename to be read is: %s \r\n", FileName);
 	FRESULT Res;
 	UINT NumBytesRead;
 	u32 BuffCnt;
@@ -348,7 +334,7 @@ int readFile(int fileNum) {
 		return XST_FAILURE;
 	}
 
-	xil_printf("Content read: \r\n");
+	if (DEBUG_ON) xil_printf("Content read: \r\n");
 	/* Data verification */
 	for (BuffCnt = 0; BuffCnt < FileSize; BuffCnt++) {
 		xil_printf("%d \r\n", DestinationAddress[BuffCnt]);
