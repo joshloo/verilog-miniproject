@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
-| Date         : Sun Jan 10 12:27:08 2021
+| Date         : Sun Jan 10 12:46:50 2021
 | Host         : DESKTOP-JJ8P2MG running 64-bit major release  (build 9200)
 | Command      : report_utilization -file sdcard_led_switch_wrapper_utilization_synth.rpt -pb sdcard_led_switch_wrapper_utilization_synth.pb
 | Design       : sdcard_led_switch_wrapper
@@ -182,7 +182,7 @@ Table of Contents
 | sdcard_led_switch_axi_gpio_1_0           |    1 |
 | sdcard_led_switch_axi_gpio_0_1           |    1 |
 | sdcard_led_switch_auto_pc_0              |    1 |
-| sdcard_led_switch_arbitor_0_0            |    1 |
+| sdcard_led_switch_arbitor_0_1            |    1 |
 +------------------------------------------+------+
 
 

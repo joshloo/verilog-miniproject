@@ -2,8 +2,8 @@
 # Vivado v2017.1 (64-bit)
 # SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
 # IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Sun Jan 10 12:27:15 2021
-# Process ID: 17952
+# Start of session at: Sun Jan 10 12:46:57 2021
+# Process ID: 20096
 # Current directory: E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/impl_1
 # Command line: vivado.exe -log sdcard_led_switch_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sdcard_led_switch_wrapper.tcl -notrace
 # Log file: E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/impl_1/sdcard_led_switch_wrapper.vdi
