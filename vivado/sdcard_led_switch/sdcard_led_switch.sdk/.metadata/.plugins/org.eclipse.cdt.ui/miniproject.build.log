@@ -1,34 +1,8 @@
-15:24:46 **** Auto Build of configuration Debug for project miniproject ****
+12:36:58 **** Incremental Build of configuration Debug for project miniproject ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/miniproject.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
-In file included from ../src/miniproject.c:35:0:
-../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
- #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
-  ^~~~~~~
-../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
- #warning  Please refer the Standalone BSP UG647 for further details
-  ^~~~~~~
-../src/miniproject.c: In function 'main':
-../src/miniproject.c:95:6: warning: variable 'previous_request' set but not used [-Wunused-but-set-variable]
-  int previous_request = 0;
-      ^~~~~~~~~~~~~~~~
-'Finished building: ../src/miniproject.c'
-' '
-'Building target: miniproject.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-'Finished building target: miniproject.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  51408	   1256	20997216	21049880	1413218	miniproject.elf
-'Finished building: miniproject.elf.size'
-' '
+make: Nothing to be done for `main-build'.
 
-15:24:47 Build Finished (took 705ms)
+12:36:59 Build Finished (took 197ms)
 

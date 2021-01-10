@@ -182,7 +182,7 @@ int main(void)
 				Status = readFile(3);
 			}
 			previous_request = sws;
-			for(i=0;i<300000000; i++);
+			for(i=0;i<10000000; i++);
 			xil_printf("**************************\r\n");
 		}
 	}

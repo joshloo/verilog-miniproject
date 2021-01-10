@@ -1631,3 +1631,6 @@ con
 ----------------End of Script----------------
 
 15:11:20 INFO  : Launch script is exported to file 'E:\XilinxSdk\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_miniproject.elf_on_local.tcl'
+21:29:45 INFO  : Launching XSCT server: xsct.bat -interactive E:\XilinxSdk\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\temp_xsdb_launch_script.tcl
+21:32:48 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+21:32:48 WARN  : xsct server communication channel is not established.

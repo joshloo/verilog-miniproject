@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="sdcard_led_switch_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Auto Detect" key="sdcard_led_switch_wrapper_hw_platform_0-device"/>
+	<item value="sdcard_led_switch_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="sdcard_led_switch_wrapper.bit" key="sdcard_led_switch_wrapper_hw_platform_0-bitFile"/>
+	<item value="Local" key="sdcard_led_switch_wrapper_hw_platform_0-target"/>
+	<item value="false" key="sdcard_led_switch_wrapper_hw_platform_0-partial_bit"/>
+</section>

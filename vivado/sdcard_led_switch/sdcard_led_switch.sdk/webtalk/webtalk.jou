@@ -2,8 +2,8 @@
 # Webtalk v2017.1 (64-bit)
 # SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
 # 
-# Start of session at: Mon Jan  4 12:11:34 2021
-# Process ID: 5448
+# Start of session at: Wed Jan  6 07:25:39 2021
+# Process ID: 8464
 # Current directory: E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/webtalk
 # Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
 # Log file: E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/webtalk/webtalk.log
