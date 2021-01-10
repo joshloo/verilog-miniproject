@@ -38,26 +38,26 @@ module arbitor
     // Declare states
     parameter
         STATE_IDLE           =   2'b00,
-        STATE_GNT0           =   2'b01,
-        STATE_GNT1           =   2'b10,
-        STATE_GNT2           =   2'b11;
+        STATE_GNT1           =   2'b01,
+        STATE_GNT2           =   2'b10,
+        STATE_GNT3           =   2'b11;
 
     // Output depends only on the state
     always @ (state) begin
         case (state)
-            STATE_GNT0:
+            STATE_GNT1:
                 begin
                     granted_req[0] = 1;
                     granted_req[1] = 0;
                     granted_req[2] = 0;
                 end
-            STATE_GNT1:
+            STATE_GNT2:
                 begin
                     granted_req[0] = 0;
                     granted_req[1] = 1;
                     granted_req[2] = 0;
                 end
-            STATE_GNT2:
+            STATE_GNT3:
                 begin
                     granted_req[0] = 0;
                     granted_req[1] = 0;
@@ -83,39 +83,39 @@ module arbitor
                     if (req[2:0] == 3'b000)
                         state <= STATE_IDLE;
                     else if (req[0] == 1'b1)
-                        state = STATE_GNT0;
+                        state = STATE_GNT1;
                     else if (req[1] == 1'b1)
-                        state = STATE_GNT1;
-                    else if (req[2] == 1'b1)
                         state = STATE_GNT2;
-
-                STATE_GNT0:
-                    if (req[1] == 1'b1)
-                        state = STATE_GNT1;
                     else if (req[2] == 1'b1)
-                        state = STATE_GNT2;
-                    else if (req[0] == 1'b1)
-                        state = STATE_GNT0;
-                    else
-                        state = STATE_IDLE;
+                        state = STATE_GNT3;
 
                 STATE_GNT1:
-                    if (req[2] == 1'b1)
+                    if (req[1] == 1'b1)
                         state = STATE_GNT2;
+                    else if (req[2] == 1'b1)
+                        state = STATE_GNT3;
                     else if (req[0] == 1'b1)
-                        state = STATE_GNT0;
-                    else if (req[1] == 1'b1)
                         state = STATE_GNT1;
                     else
                         state = STATE_IDLE;
 
                 STATE_GNT2:
-                    if (req[0] == 1'b1)
-                        state = STATE_GNT0;
-                    else if (req[1] == 1'b1)
+                    if (req[2] == 1'b1)
+                        state = STATE_GNT3;
+                    else if (req[0] == 1'b1)
                         state = STATE_GNT1;
-                    else if (req[2] == 1'b1)
+                    else if (req[1] == 1'b1)
                         state = STATE_GNT2;
+                    else
+                        state = STATE_IDLE;
+
+                STATE_GNT3:
+                    if (req[0] == 1'b1)
+                        state = STATE_GNT1;
+                    else if (req[1] == 1'b1)
+                        state = STATE_GNT2;
+                    else if (req[2] == 1'b1)
+                        state = STATE_GNT3;
                     else
                         state = STATE_IDLE;
 

@@ -1868,3 +1868,336 @@ con
 ----------------End of Script----------------
 
 12:49:58 INFO  : Launch script is exported to file 'E:\XilinxSdk\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_miniproject.elf_on_local.tcl'
+13:05:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:05:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786791A" && level==0} -index 1' command is executed.
+13:05:26 INFO  : FPGA configured successfully with bitstream "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/sdcard_led_switch_wrapper.bit"
+13:05:41 INFO  : Disconnected from the channel tcfchan#6.
+13:05:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786791A" && level==0} -index 1' command is executed.
+13:05:42 INFO  : 'fpga -state' command is executed.
+13:05:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:05:42 INFO  : Jtag cable 'Digilent Zybo 210279786791A' is selected.
+13:05:42 INFO  : 'jtag frequency' command is executed.
+13:05:42 INFO  : Sourcing of 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:05:42 INFO  : Context for 'APU' is selected.
+13:05:42 INFO  : 'stop' command is executed.
+13:05:43 INFO  : 'ps7_init' command is executed.
+13:05:43 INFO  : 'ps7_post_config' command is executed.
+13:05:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:05:43 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:05:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:05:43 INFO  : The application 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:05:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+dow E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf
+----------------End of Script----------------
+
+13:05:43 INFO  : Memory regions updated for context APU
+13:05:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:05:43 INFO  : 'con' command is executed.
+13:05:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+con
+----------------End of Script----------------
+
+13:05:43 INFO  : Launch script is exported to file 'E:\XilinxSdk\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_miniproject.elf_on_local.tcl'
+13:06:50 INFO  : Disconnected from the channel tcfchan#7.
+13:06:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786791A" && level==0} -index 1' command is executed.
+13:06:51 INFO  : 'fpga -state' command is executed.
+13:06:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:06:52 INFO  : Jtag cable 'Digilent Zybo 210279786791A' is selected.
+13:06:52 INFO  : 'jtag frequency' command is executed.
+13:06:52 INFO  : Sourcing of 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:06:52 INFO  : Context for 'APU' is selected.
+13:06:52 INFO  : 'stop' command is executed.
+13:06:52 INFO  : 'ps7_init' command is executed.
+13:06:52 INFO  : 'ps7_post_config' command is executed.
+13:06:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:06:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:06:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:06:52 INFO  : The application 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:06:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+dow E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf
+----------------End of Script----------------
+
+13:06:52 INFO  : Memory regions updated for context APU
+13:06:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:06:52 INFO  : 'con' command is executed.
+13:06:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+con
+----------------End of Script----------------
+
+13:06:52 INFO  : Launch script is exported to file 'E:\XilinxSdk\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_miniproject.elf_on_local.tcl'
+13:12:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:12:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786791A" && level==0} -index 1' command is executed.
+13:12:14 INFO  : FPGA configured successfully with bitstream "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/sdcard_led_switch_wrapper.bit"
+13:12:36 INFO  : Disconnected from the channel tcfchan#8.
+13:12:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786791A" && level==0} -index 1' command is executed.
+13:12:38 INFO  : 'fpga -state' command is executed.
+13:12:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:12:38 INFO  : Jtag cable 'Digilent Zybo 210279786791A' is selected.
+13:12:38 INFO  : 'jtag frequency' command is executed.
+13:12:38 INFO  : Sourcing of 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:12:38 INFO  : Context for 'APU' is selected.
+13:12:38 INFO  : 'stop' command is executed.
+13:12:40 INFO  : 'ps7_init' command is executed.
+13:12:40 INFO  : 'ps7_post_config' command is executed.
+13:12:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:12:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:12:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:12:42 ERROR : Memory write error at 0x100000. AP transaction timeout
+13:12:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+dow E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf
+----------------End of Script----------------
+
+13:13:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786791A" && level==0} -index 1' command is executed.
+13:13:10 INFO  : FPGA configured successfully with bitstream "E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/sdcard_led_switch_wrapper.bit"
+13:13:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786791A" && level==0} -index 1' command is executed.
+13:13:14 INFO  : 'fpga -state' command is executed.
+13:13:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:14 INFO  : Jtag cable 'Digilent Zybo 210279786791A' is selected.
+13:13:14 INFO  : 'jtag frequency' command is executed.
+13:13:14 INFO  : Sourcing of 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:13:14 INFO  : Context for 'APU' is selected.
+13:13:14 INFO  : 'stop' command is executed.
+13:13:14 INFO  : 'ps7_init' command is executed.
+13:13:14 INFO  : 'ps7_post_config' command is executed.
+13:13:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:13:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:13:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:13:15 INFO  : The application 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:13:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+dow E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf
+----------------End of Script----------------
+
+13:13:15 INFO  : Memory regions updated for context APU
+13:13:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:13:15 INFO  : 'con' command is executed.
+13:13:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+con
+----------------End of Script----------------
+
+13:13:15 INFO  : Launch script is exported to file 'E:\XilinxSdk\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_miniproject.elf_on_local.tcl'
+13:20:51 INFO  : Disconnected from the channel tcfchan#9.
+13:20:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786791A" && level==0} -index 1' command is executed.
+13:20:52 INFO  : 'fpga -state' command is executed.
+13:20:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:20:52 INFO  : Jtag cable 'Digilent Zybo 210279786791A' is selected.
+13:20:52 INFO  : 'jtag frequency' command is executed.
+13:20:52 INFO  : Sourcing of 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:20:52 INFO  : Context for 'APU' is selected.
+13:20:52 INFO  : 'stop' command is executed.
+13:20:53 INFO  : 'ps7_init' command is executed.
+13:20:53 INFO  : 'ps7_post_config' command is executed.
+13:20:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:20:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:20:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:20:53 INFO  : The application 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:20:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+dow E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf
+----------------End of Script----------------
+
+13:20:53 INFO  : Memory regions updated for context APU
+13:20:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:20:53 INFO  : 'con' command is executed.
+13:20:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+con
+----------------End of Script----------------
+
+13:20:53 INFO  : Launch script is exported to file 'E:\XilinxSdk\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_miniproject.elf_on_local.tcl'
+13:21:41 INFO  : Disconnected from the channel tcfchan#10.
+13:21:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786791A" && level==0} -index 1' command is executed.
+13:21:42 INFO  : 'fpga -state' command is executed.
+13:21:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:21:43 INFO  : Jtag cable 'Digilent Zybo 210279786791A' is selected.
+13:21:43 INFO  : 'jtag frequency' command is executed.
+13:21:43 INFO  : Sourcing of 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:21:43 INFO  : Context for 'APU' is selected.
+13:21:43 INFO  : 'stop' command is executed.
+13:21:43 INFO  : 'ps7_init' command is executed.
+13:21:43 INFO  : 'ps7_post_config' command is executed.
+13:21:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:21:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:21:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:21:44 INFO  : The application 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:21:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+dow E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf
+----------------End of Script----------------
+
+13:21:44 INFO  : Memory regions updated for context APU
+13:21:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:21:44 INFO  : 'con' command is executed.
+13:21:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+con
+----------------End of Script----------------
+
+13:21:44 INFO  : Launch script is exported to file 'E:\XilinxSdk\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_miniproject.elf_on_local.tcl'
+13:25:25 INFO  : Disconnected from the channel tcfchan#11.
+13:25:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786791A" && level==0} -index 1' command is executed.
+13:25:26 INFO  : 'fpga -state' command is executed.
+13:25:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:25:27 INFO  : Jtag cable 'Digilent Zybo 210279786791A' is selected.
+13:25:27 INFO  : 'jtag frequency' command is executed.
+13:25:27 INFO  : Sourcing of 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:25:27 INFO  : Context for 'APU' is selected.
+13:25:27 INFO  : 'stop' command is executed.
+13:25:27 INFO  : 'ps7_init' command is executed.
+13:25:27 INFO  : 'ps7_post_config' command is executed.
+13:25:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:25:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:28 INFO  : The application 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:25:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+dow E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf
+----------------End of Script----------------
+
+13:25:28 INFO  : Memory regions updated for context APU
+13:25:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:28 INFO  : 'con' command is executed.
+13:25:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+con
+----------------End of Script----------------
+
+13:25:28 INFO  : Launch script is exported to file 'E:\XilinxSdk\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_miniproject.elf_on_local.tcl'
+13:25:49 INFO  : Disconnected from the channel tcfchan#12.
+13:25:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786791A" && level==0} -index 1' command is executed.
+13:25:51 INFO  : 'fpga -state' command is executed.
+13:25:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:25:51 INFO  : Jtag cable 'Digilent Zybo 210279786791A' is selected.
+13:25:51 INFO  : 'jtag frequency' command is executed.
+13:25:51 INFO  : Sourcing of 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:25:51 INFO  : Context for 'APU' is selected.
+13:25:51 INFO  : 'stop' command is executed.
+13:25:51 INFO  : 'ps7_init' command is executed.
+13:25:51 INFO  : 'ps7_post_config' command is executed.
+13:25:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:25:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:51 INFO  : The application 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:25:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+dow E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf
+----------------End of Script----------------
+
+13:25:52 INFO  : Memory regions updated for context APU
+13:25:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:52 INFO  : 'con' command is executed.
+13:25:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+con
+----------------End of Script----------------
+
+13:25:52 INFO  : Launch script is exported to file 'E:\XilinxSdk\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_miniproject.elf_on_local.tcl'
+13:31:10 INFO  : Disconnected from the channel tcfchan#13.
+13:31:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279786791A" && level==0} -index 1' command is executed.
+13:31:11 INFO  : 'fpga -state' command is executed.
+13:31:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:31:11 INFO  : Jtag cable 'Digilent Zybo 210279786791A' is selected.
+13:31:11 INFO  : 'jtag frequency' command is executed.
+13:31:11 INFO  : Sourcing of 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:31:11 INFO  : Context for 'APU' is selected.
+13:31:11 INFO  : 'stop' command is executed.
+13:31:12 INFO  : 'ps7_init' command is executed.
+13:31:12 INFO  : 'ps7_post_config' command is executed.
+13:31:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:31:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:31:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:31:12 INFO  : The application 'E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:31:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/sdcard_led_switch_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+dow E:/XilinxSdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.sdk/miniproject/Debug/miniproject.elf
+----------------End of Script----------------
+
+13:31:12 INFO  : Memory regions updated for context APU
+13:31:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:31:12 INFO  : 'con' command is executed.
+13:31:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279786791A"} -index 0
+con
+----------------End of Script----------------
+
+13:31:12 INFO  : Launch script is exported to file 'E:\XilinxSdk\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_miniproject.elf_on_local.tcl'
+14:48:24 INFO  : Launching XSCT server: xsct.bat -interactive E:\XilinxSdk\verilog-miniproject\vivado\sdcard_led_switch\sdcard_led_switch.sdk\temp_xsdb_launch_script.tcl

@@ -1,0 +1,4 @@
+Running: xsim.dir/sdcard_led_switch_wrapper_behav/xsimk.exe -simmode gui -wdb sdcard_led_switch_wrapper_behav.wdb -simrunnum 0 -socket 63306
+Design successfully loaded
+Design Loading Memory Usage: 26392 KB (Peak: 26392 KB)
+Design Loading CPU Usage: 140 ms
