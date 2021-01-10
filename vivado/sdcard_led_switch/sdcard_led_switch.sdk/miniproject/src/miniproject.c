@@ -50,11 +50,11 @@ char FileName[32] = "file0.bin";
 // multiple flags used for program purpose
 #define FIRST_RUN	0 	// In any case of new sd card is being used, this should be set to 1
 						// so that the program will write 3 files to sd card and exit.
-#define DEBUG_ON	0	// Setting this to 1 triggers more debug prints to look into what is
+#define DEBUG_ON	1	// Setting this to 1 triggers more debug prints to look into what is
 						// going on in FPGA and C code perspective
-#define AUTOMATION	0	// Setting this to 1 triggers auto request of 1, 2 and 3. without neededing
-						// to set the switches.
-#define NO_FPGA		1	// Setting this to 1 will take away FPGA block from the equation and assume
+#define AUTOMATION	0	// Setting this to 1 triggers auto request of 1, 2 and 3. without needing
+						// to set the input switches.
+#define NO_FPGA		0	// Setting this to 1 will take away FPGA block from the equation and assume
 						// system can handle multiple requests concurrently.
 
 #define FILE1_STR "file1.bin"
@@ -169,7 +169,7 @@ int main(void)
 			if (request3 == 1) {
 				Status = readFile(3);
 			}
-			for(i=0;i<10000000; i++);
+			for(i=0;i<30000000; i++);
 		}
 	}
 	return XST_SUCCESS;

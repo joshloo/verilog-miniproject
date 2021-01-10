@@ -2446,3 +2446,168 @@ arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
   51016	   1256	20997216	21049488	1413090	miniproject.elf
 'Finished building: miniproject.elf.size'
 ' '
+16:07:22 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:11:17 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51016	   1256	20997216	21049488	1413090	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+16:11:31 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51016	   1256	20997216	21049488	1413090	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+16:14:23 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49688	   1220	20997248	21048156	1412b5c	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+16:14:38 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:14:47 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:17:20 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51344	   1256	20997216	21049816	14131d8	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+16:22:39 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:23:01 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:30:34 **** Auto Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/miniproject.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/miniproject.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../miniproject_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/miniproject.d" -MT"src/miniproject.o" -o "src/miniproject.o" "../src/miniproject.c"
+In file included from ../src/miniproject.c:35:0:
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../miniproject_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/miniproject.c'
+' '
+'Building target: miniproject.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../miniproject_bsp/ps7_cortexa9_0/lib -o "miniproject.elf"  ./src/helloworld.o ./src/miniproject.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: miniproject.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size miniproject.elf  |tee "miniproject.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51344	   1256	20997216	21049816	14131d8	miniproject.elf
+'Finished building: miniproject.elf.size'
+' '
+16:30:36 **** Incremental Build of configuration Debug for project miniproject ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

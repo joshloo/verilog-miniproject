@@ -6,7 +6,7 @@
 <Project Version="7" Minor="20" Path="e:/xilinxsdk/verilog-miniproject/vivado/sdcard_led_switch/sdcard_led_switch.tmp/arbitor_v1_0_project/arbitor_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="0423bd782d304fd9be345c6dcd0960d5"/>
+    <Option Name="Id" Val="b3c370150d6146c59b11b444ea851adb"/>
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -19,6 +19,7 @@
     <Option Name="BoardPart" Val="digilentinc.com:zybo:part0:1.0"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_bad_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../XilinxSdk/verilog-miniproject/vivado/ip_repo/arbitor_1.0"/>
